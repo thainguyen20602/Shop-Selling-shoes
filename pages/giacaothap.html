@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <link rel="stylesheet" href="css/fontawesome.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <title>Shoes</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!----------------------------- Header ------------------------------->
+      <section class="header">
+        <div class="container">
+          <!----------------------------- Logo ------------------------------->
+          <div class="header-left">
+            <a href="index.html" class="header-logo"
+              ><img
+                src="./images/logo-nike.png"
+                alt=""
+                class="header-logo-nike"
+            /></a>
+          </div>
+
+          <!----------------------------- Navigation ------------------------------->
+          <div class="header-middle">
+            <ul class="header-nav">
+              <li class="header-nav-item">
+                <a href="index.html" class="header-nav-link">Trang chủ</a>
+              </li>
+
+              <li class="header-nav-item">
+                <a href="introduce.html" class="header-nav-link">Giới thiệu</a>
+              </li>
+
+              <li class="header-nav-item">
+                <a href="product.html" class="header-nav-link">Sản phẩm</a>
+              </li>
+
+              <li class="header-nav-item">
+                <a href="news.html" class="header-nav-link">Tin tức</a>
+              </li>
+
+              <li class="header-nav-item">
+                <a href="contact.html" class="header-nav-link">Liên hệ</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="header-right">
+            <ul class="header-group">
+              <li class="header-group-item">
+                <input class="tim" id="tim" type="text">
+                <button class="hienhien" style="background-color:#120414;" onclick="tim()"><i class="fa fa-light fa-search header-icon header-search"></i></button>
+              </li>
+              <li class="header-group-item">
+                <a href="login.html" class="header-group-link">
+                  <i class="fa fa-user header-user header-icon"></i>
+                </a>
+              </li>
+
+              <li class="header-group-item">
+                <a href="#" class="header-group-link"
+                  ><i class="fa fa-shopping-cart header-icon header-cart"></i
+                ></a>
+              </li>
+
+              <i class="fa fa-bars header-toggle"></i>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!----------------------------- Banner ------------------------------->
+      <section class="banner">
+        <div class="banner-top">
+          <img src="./images/slider-img.jpg" alt="" class="banner-image" />
+          <div class="banner-content">
+            <div class="banner-content-heading">Tất cả sản phẩm</div>
+            <ul class="banner-content-list">
+                <li>
+                    <a href="index.html" class="banner-content-item">Trang chủ</a>
+                </li>
+              <li class="banner-content-item" >
+                Tất cả sản phẩm
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!----------------------------- Product ------------------------------->
+      <section class="product">
+        <div class="container">
+          <div class="product-content">
+            <div class="product-left">
+              <div class="product">
+                <div class="product-group">
+                  <span class="product-title">Sắp xếp</span>
+                  <ul class="product-sort">
+                    <li class="product-sort-item">
+                      <a href="product.html" class="product-sort-link">
+                        <span class="product-sort-check"></span>
+                        Mặc định
+                      </a>
+                    </li>
+    
+                    <li class="product-sort-item">
+                      <a href="az.html" class="product-sort-link">
+                        <span class="product-sort-check"></span>
+                        Tên A-Z
+                      </a>
+                    </li>
+    
+                    <li class="product-sort-item">
+                      <a href="za.html" class="product-sort-link">
+                        <span class="product-sort-check"></span>
+                        Tên Z-A
+                      </a>
+                    </li>
+    
+                    <li class="product-sort-item">
+                      <a href="giathapcao.html" class="product-sort-link">
+                        <span class="product-sort-check"></span>
+                        Giá thấp đến cao
+                      </a>
+                    </li>
+    
+                    <li class="product-sort-item">
+                      <a href="giacaothap.html" class="product-sort-link">
+                        <span class="product-sort-check"></span>
+                        Giá cao xuống thấp
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+    
+                <div class="product-group">
+                  <span class="product-title">Loại</span>
+                  <ul class="product-type">
+                    <li class="product-type-item">
+                      <input
+                        type="checkbox"
+                        name=""
+                        id="product-type-input"
+                        class="product-type-input"
+                      />
+                      
+                      <a for="product-type-input" class="product-type-label" href="bongro.html">Giày bóng rổ</a>
+                      
+                    </li>
+                    
+    
+                    <li class="product-type-item">
+                      <input
+                        type="checkbox"
+                        name=""
+                        id="product-type-input"
+                        class="product-type-input"
+                      />
+                      <a for="product-type-input" class="product-type-label" href="thethao.html">Giày thể thao</a>
+                    </li>
+    
+                    <li class="product-type-item">
+                      <input
+                        type="checkbox"
+                        name=""
+                        id="product-type-input"
+                        class="product-type-input"
+                      />
+                      <a for="product-type-input" class="product-type-label" href="chaybo.html">Giày chạy bộ</a>
+                    </li>
+    
+                    <li class="product-type-item">
+                      <input
+                        type="checkbox"
+                        name=""
+                        id="product-type-input"
+                        class="product-type-input"
+                      />
+                      <a for="product-type-input" class="product-type-label" href="dulich.html">Giày du lịch</a>
+                    </li>
+                  </ul>
+                </div>
+    
+                
+    
+                
+              </div>
+            </div>
+    
+            <div class="product-right">
+              <div class="product-category-list">
+                <div class="product-category-item">
+                  <a href="#" class="product-category-link">
+                    <img
+                      src="./images/number3.png"
+                      alt=""
+                      class="product-category-image"
+                    />
+                  </a>
+                  <div class="product-category-info">
+                    <h3 class="product-category-heading">
+                      <a href="#" class="product-category-name"
+                        >DH0265-600 Nike Air Force 1 Low Dusty Red Suede</a
+                      >
+                    </h3>
+                    <span class="product-category-price">7.890.000đ</span>
+                  </div>
+                </div>
+    
+                <div class="product-category-item">
+                  <a href="#" class="product-category-link">
+                    <img
+                      src="./images/number4.png"
+                      alt=""
+                      class="product-category-image"
+                    />
+                  </a>
+                  <div class="product-category-info">
+                    <h3 class="product-category-heading">
+                      <a href="#" class="product-category-name"
+                        >DN1555-200 Nike Air Force 1 Low SP Supreme Wheat</a
+                      >
+                    </h3>
+                    <span class="product-category-price">7.390.000đ</span>
+                  </div>
+                </div>
+    
+                <div class="product-category-item">
+                  <a href="#" class="product-category-link">
+                    <img
+                      src="./images/number7.png"
+                      alt=""
+                      class="product-category-image"
+                    />
+                  </a>
+                  <div class="product-category-info">
+                    <h3 class="product-category-heading">
+                      <a href="#" class="product-category-name"
+                        >DQ7668-100 Nike Air Force 1 Mid React White Black</a
+                      >
+                    </h3>
+                    <span class="product-category-price">5.390.000đ</span>
+                  </div>
+                </div>
+    
+                <div class="product-category-item">
+                  <a href="#" class="product-category-link">
+                    <img
+                      src="./images/number11.png"
+                      alt=""
+                      class="product-category-image"
+                    />
+                  </a>
+                  <div class="product-category-info">
+                    <h3 class="product-category-heading">
+                      <a href="#" class="product-category-name"
+                        >DZ7338-001 Nike Air Force 1 High Patriots</a
+                      >
+                    </h3>
+                    <span class="product-category-price">4.890.000đ</span>
+                  </div>
+                </div>
+    
+                <div class="product-category-item">
+                  <a href="#" class="product-category-link">
+                    <img
+                      src="./images/number10.png"
+                      alt=""
+                      class="product-category-image"
+                    />
+                  </a>
+                  <div class="product-category-info">
+                    <h3 class="product-category-heading">
+                      <a href="#" class="product-category-name"
+                        >DQ7584-300 Nike Air Force 1 High Green White</a
+                      >
+                    </h3>
+                    <span class="product-category-price">4.890.000đ</span>
+                  </div>
+                </div>
+    
+                <div class="product-category-item">
+                  <a href="#" class="product-category-link">
+                    <img
+                      src="./images/number1.png"
+                      alt=""
+                      class="product-category-image"
+                    />
+                  </a>
+                  <div class="product-category-info">
+                    <h3 class="product-category-heading">
+                      <a href="#" class="product-category-name"
+                        >DQ7659-101 Nike Air Force 1 Low College Pack Midninght Navy</a
+                      >
+                    </h3>
+                    <span class="product-category-price">4.690.000đ</span> 
+                  </div>
+                </div>
+    
+                <div class="product-category-item">
+                  <a href="#" class="product-category-link">
+                    <img
+                      src="./images/number8.png"
+                      alt=""
+                      class="product-category-image"
+                    />
+                  </a>
+                  <div class="product-category-info">
+                    <h3 class="product-category-heading">
+                      <a href="#" class="product-category-name"
+                        >DR9867-101 Nike Air Force 1 Low White University Blue</a
+                      >
+                    </h3>
+                    <span class="product-category-price">4.390.000đ</span>
+                  </div>
+                </div>
+    
+                <div class="product-category-item">
+                  <a href="#" class="product-category-link">
+                    <img
+                      src="./images/number6.png"
+                      alt=""
+                      class="product-category-image"
+                    />
+                  </a>
+                  <div class="product-category-info">
+                    <h3 class="product-category-heading">
+                      <a href="#" class="product-category-name"
+                        >DM0119-100 Nike Air Force 1 Mid Sun Club White</a
+                      >
+                    </h3>
+                    <span class="product-category-price">3.890.000đ</span>
+                  </div>
+                </div>
+    
+                <div class="product-category-item">
+                  <a href="#" class="product-category-link">
+                    <img
+                      src="./images/number12.png"
+                      alt=""
+                      class="product-category-image"
+                    />
+                  </a>
+                  <div class="product-category-info">
+                    <h3 class="product-category-heading">
+                      <a href="#" class="product-category-name"
+                        >FB7162-081 Nike Air Force 1 07 Black Laser Orange</a
+                      >
+                    </h3>
+                    <span class="product-category-price">3.890.000đ</span>
+                  </div>
+                </div>
+    
+                <div class="product-category-item">
+                  <a href="#" class="product-category-link">
+                    <img
+                      src="./images/number5.png"
+                      alt=""
+                      class="product-category-image"
+                    />
+                  </a>
+                  <div class="product-category-info">
+                    <h3 class="product-category-heading">
+                      <a href="#" class="product-category-name"
+                        >FB1853-111 Nike Air Force 1 Low Just Do It White Neon</a
+                      >
+                    </h3>
+                    <span class="product-category-price">3.890.000đ</span>
+                  </div>
+                </div>
+    
+                <div class="product-category-item">
+                  <a href="#" class="product-category-link">
+                    <img
+                      src="./images/number9.png"
+                      alt=""
+                      class="product-category-image"
+                    />
+                  </a>
+                  <div class="product-category-info">
+                    <h3 class="product-category-heading">
+                      <a href="#" class="product-category-name"
+                        >DV1492-101 Nike Air Force 1 Low 07 Just Do It</a
+                      >
+                    </h3>
+                    <span class="product-category-price">3.190.000đ</span>
+                  </div>
+                </div>
+    
+                <div class="product-category-item">
+                  <a href="#" class="product-category-link">
+                    <img
+                      src="./images/number2.png"
+                      alt=""
+                      class="product-category-image"
+                    />
+                  </a>
+                  <div class="product-category-info">
+                    <h3 class="product-category-heading">
+                      <a href="#" class="product-category-name"
+                        >DV1331-100 Nike Air Force 1 Low BLack White</a
+                      >
+                    </h3>
+                    <span class="product-category-price">2.790.000đ</span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-category-page"></div>
+            </div>
+          </div>
+          <i class="fa-solid fa-filter product-filter"></i>
+        </div>
+      </section>
+      <!----------------------------- Footer ------------------------------->
+      <section class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-column">
+              <a href="index.html" class="footer-logo"
+                ><img
+                  src="./images/logo-nike.png"
+                  alt=""
+                  class="footer-logo-nike"
+              /></a>
+
+              <div class="footer-contact">
+                <div class="footer-contact-item">
+                  <i class="fa fa-location"></i>
+                  <span class="footer-contact-title"
+                    >Tầng 6, Tòa nhà Ladeco, 266 Đội Cấn, Phường Liễu Giai, Quận
+                    Ba Đình, TP Hà Nội
+                  </span>
+                </div>
+
+                <div class="footer-contact-item">
+                  <i class="fa fa-phone"></i>
+                  <span class="footer-contact-title">19006750 </span>
+                </div>
+
+                <div class="footer-contact-item">
+                  <i class="fa fa-headset"></i>
+                  <span class="footer-contact-title">support@sapo.vn </span>
+                </div>
+              </div>
+
+              <div class="footer-payment">
+                <a href="#" class="footer-payment-link"
+                  ><img
+                    src="./images/payment-1.png"
+                    alt=""
+                    class="footer-payment-image" /></a
+                ><a href="#" class="footer-payment-link"
+                  ><img
+                    src="./images/payment-2.png"
+                    alt=""
+                    class="footer-payment-image" /></a
+                ><a href="#" class="footer-payment-link"
+                  ><img
+                    src="./images/payment-3.png"
+                    alt=""
+                    class="footer-payment-image" /></a
+                ><a href="#" class="footer-payment-link"
+                  ><img
+                    src="./images/payment-4.png"
+                    alt=""
+                    class="footer-payment-image"
+                /></a>
+              </div>
+            </div>
+            <div class="footer-column">
+              <h3 class="footer-heading">Chính sách</h3>
+              <a href="index.html" class="footer-nav-link">Trang chủ</a>
+              <a href="introduce.html" class="footer-nav-link">Giới thiệu</a>
+              <a href="product.html" class="footer-nav-link">Sản phẩm</a>
+              <a href="news.html" class="footer-nav-link">Tin tức</a>
+              <a href="contact.html" class="footer-nav-link">Liên hệ</a>
+            </div>
+            <div class="footer-column">
+              <h3 class="footer-heading">Theo dõi chúng tôi</h3>
+              <div class="footer-social-list">
+                <a href="https://www.facebook.com/lynguyenminh2k2" class="footer-social-icon"
+                  ><i class="fab fa-facebook"></i></a
+                ><a href="https://www.facebook.com/lynguyenminh2k2" class="footer-social-icon"
+                  ><i class="fab fa-instagram"></i></a
+                ><a href="https://www.facebook.com/lynguyenminh2k2" class="footer-social-icon"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+              </div>
+              <h3 class="footer-heading">Đăng ký để nhận tin</h3>
+              <form action="" class="footer-form">
+                <input
+                  type="email"
+                  name=""
+                  placeholder="Nhập địa chỉ email"
+                  id=""
+                  class="footer-form-input"
+                />
+                <button type="submit" class="footer-form-button">Gửi</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="./script/loadpage.js"></script>
+  </body>
+</html>
