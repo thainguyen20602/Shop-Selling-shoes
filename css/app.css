@@ -365,6 +365,15 @@ button {
   display: none;
 }
 
+a.login-menu-link
+{
+  color: #000;
+}
+
+a.login-menu-link:hover
+{
+  color: #fe6b5e;
+}
 @media screen and (max-width: 1023px) {
   .header {
     padding: 2.4rem 3rem;
@@ -1023,6 +1032,10 @@ button {
   font-size: 1.3rem;
   margin-bottom: 2rem;
   display: block;
+}
+a.login-form-forget
+{
+  color:#337ab7;
 }
 .login-form-submit {
   width: 100%;
