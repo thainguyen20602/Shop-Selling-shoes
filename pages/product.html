@@ -428,23 +428,6 @@
             </div>
           </div>
           <i class="fa-solid fa-filter product-filter" onclick="show()"></i>
-          <script type="text/javascript">
-            let flag = 0;
-            let element = document.getElementsByClassName("product-left")
-            function show() {
-              // element.className += " is-show"
-              if(flag == 0)
-              {
-                flag = 1;
-                element[0].className += " is-show";            
-              }
-              else
-              {
-                flag = 0;
-                element[0].className = element[0].className.replace(" is-show" , "");
-              }
-            }
-          </script>
         </div>
       </section>
       <!----------------------------- Footer ------------------------------->
@@ -539,5 +522,6 @@
       </section>
     </div>
     <script src="../script/loadpage.js"></script>
+    <script src="../script/show.js"></script>
   </body>
 </html>
