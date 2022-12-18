@@ -1,7 +1,11 @@
 /* http://meyerweb.com/eric/tools/css/reset/
   v2.0 | 20110126
   License: none (public domain)
+
 */
+
+ /* ----------------------- css for page index ------------------------------ */
+ 
 * {
   margin: 0;
   padding: 0;
@@ -483,6 +487,9 @@ a.login-menu-link:hover
     margin-left: 0 auto;
   }
 }
+
+/* --------------------------- css for item banner ------------------------------ */
+
 .banner-top {
   position: relative;
 }
@@ -574,6 +581,8 @@ a.login-menu-link:hover
     font-size: 1rem;
   }
 }
+
+/* ---------------------------- css for page news ----------------------------- */
 .news {
   padding: 5rem 0;
 }
@@ -648,6 +657,9 @@ a.login-menu-link:hover
     margin-left: 0;
   }
 }
+
+/* ------------------------ css for page contact -------------------------------- */
+
 .contact {
   padding: 5rem;
   display: flex;
@@ -707,6 +719,9 @@ a.login-menu-link:hover
     font-size: 1.4rem;
   }
 }
+
+/* -----------------------------css for page product ------------------------------ */
+
 .product {
   padding: 2rem 0;
 }
@@ -976,6 +991,9 @@ a.login-menu-link:hover
     top: 30%;
   }
 }
+
+/* ------------------------- css for page login --------------------------------- */
+
 .login {
   display: flex;
   justify-content: center;
@@ -1064,6 +1082,9 @@ a.login-form-forget
     font-size: 1.5rem;
   }
 }
+
+/* -------------css for page register--------------------- */
+
 .register {
   display: flex;
   justify-content: center;

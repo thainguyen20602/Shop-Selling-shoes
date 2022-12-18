@@ -109,7 +109,7 @@
       <section class="product">
         <div class="container">
           <div class="product-content">
-            <div class="product-left">
+            <div class="product-left" id ="product-left">
               <div class="product">
                 <div class="product-group">
                   <span class="product-title">Sắp xếp</span>
@@ -427,7 +427,24 @@
               <div class="product-category-page"></div>
             </div>
           </div>
-          <i class="fa-solid fa-filter product-filter"></i>
+          <i class="fa-solid fa-filter product-filter" onclick="show()"></i>
+          <script type="text/javascript">
+            let flag = 0;
+            let element = document.getElementsByClassName("product-left")
+            function show() {
+              // element.className += " is-show"
+              if(flag == 0)
+              {
+                flag = 1;
+                element[0].className += " is-show";            
+              }
+              else
+              {
+                flag = 0;
+                element[0].className = element[0].className.replace(" is-show" , "");
+              }
+            }
+          </script>
         </div>
       </section>
       <!----------------------------- Footer ------------------------------->
