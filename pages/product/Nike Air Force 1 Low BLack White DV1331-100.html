@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="../../css/contentslider.css">
+    <link rel="stylesheet" href="../../css/hover-dropdown.css">
+    <link rel="stylesheet" href="../../css/fontawesome.css" />
+    <link rel="stylesheet" href="../../css/app.css" />
+
+    <script type="text/javascript" src="../../script/contentslider.js"></script>
+    <title>Shoes</title>
+  </head>
+  <body>
+    <div class="wrapper" >
+      <!----------------------------- Header ------------------------------->
+      <section class="header">
+        <div class="container">
+          <!----------------------------- Logo ------------------------------->
+          <div class="header-left">
+            <a href="../../index.html" class="header-logo"
+              ><img
+                src="../../images/logo-nike.png"
+                alt=""
+                class="header-logo-nike"
+            /></a>
+          </div>
+
+          <!----------------------------- Navigation ------------------------------->
+          <div class="header-middle">
+            <ul class="header-nav">
+              <li class="header-nav-item">
+                <a href="../../index.html" class="header-nav-link">Trang chủ</a>
+              </li>
+
+              <li class="header-nav-item">
+                <a href="../introduce.html" class="header-nav-link">Giới thiệu</a>
+              </li>
+
+              <li class="header-nav-item">
+                <a href="../product.html" class="header-nav-link">Sản phẩm</a>
+              </li>
+
+              <li class="header-nav-item">
+                <a href="../news.html" class="header-nav-link">Tin tức</a>
+              </li>
+
+              <li class="header-nav-item">
+                <a href="../contact.html" class="header-nav-link">Liên hệ</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="header-right">
+            <ul class="header-group">
+              <li class="header-group-item">
+                <input class="tim" id="tim" type="text">
+                <button class="hienhien" style="background-color:#120414;" onclick="tim()"><i class="fa fa-light fa-search header-icon header-search"></i></button>
+              </li>
+
+              <li class="header-group-item">
+                <a href="../login.html" class="header-group-link">
+                  <i class="fa fa-user header-user header-icon"></i>
+                </a>
+              </li>
+
+              <li class="header-group-item">
+                <a href="#" class="header-group-link"
+                  ><i class="fa fa-shopping-cart header-icon header-cart"></i
+                ></a>
+              </li>
+
+              <i class="fa fa-bars header-toggle dropdown" >   
+                <div class="dropdown-content">
+                  <a href="../../index.html" >Trang chủ</a>
+                  <a href="../introduce.html">Giới thiệu</a>
+                  <a href="../product.html" >Sản phẩm</a>
+                  <a href="../news.html" >Tin tức</a>
+                  <a href="../contact.html" >Liên hệ</a>
+                </div>
+              </i>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!----------------------------- Banner ------------------------------->
+      <!-- <section class="banner">
+        <div class="banner-top">
+          <img src="../../images/slider-img.jpg" alt="" class="banner-image" />
+          <div class="banner-content">
+            <div class="banner-content-heading">Tất cả sản phẩm</div>
+            <ul class="banner-content-list">
+              <li>
+                <a href="../../index.html" class="banner-content-item">Trang chủ</a>
+              </li>
+              <li class="banner-content-item">
+                Tất cả sản phẩm
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section> -->
+      <section class="banner-detail">
+        <div class="banner-detail-content">
+            <ul class="banner-detail-list">
+                <li><a href="../../index.html">Shoes</a></li>
+                <li>&nbsp; > &nbsp;</li>
+                <li><a href="../product.html">Sản Phẩm</a></li>
+                <li>&nbsp; > &nbsp;</li>
+                <li>Nike Air Force 1 Low BLack White DV1331-100</li>
+            </ul>
+        </div>
+      </section>
+
+      <!----------------------------- Product ------------------------------->
+      <section class="product-detail">
+          <div class="product-detail-order">
+                  <div class="order-left">
+                    <div id="slider1" class="sliderwrapper">
+                      <div class="contentdiv">
+                        <img src="../../images/number2.png" alt="">
+                      </div>
+                      <div class="contentdiv">
+                        <img src="../../images/number2_1.png" alt="">
+                      </div>
+                      <div class="contentdiv">
+                        <img src="../../images/number2_2.png" alt="">
+                      </div>
+                      <div class="contentdiv">
+                        <img src="../../images/number2_3.png" alt="">
+                      </div>
+                    </div>
+                    <div id="paginate-slider1" class="pagination">
+                      <a href="#" class="toc anotherclass">
+                        <img src="../../images/number2.png" alt="">
+                      </a>
+                      <a href="#" class="toc anotherclass">
+                        <img src="../../images/number2_1.png" alt="">
+                      </a>
+                      <a href="#" class="toc anotherclass">
+                        <img src="../../images/number2_2.png" alt="">
+                      </a>
+                      <a href="#" class="toc anotherclass">
+                        <img src="../../images/number2_3.png" alt="">
+                      </a>
+                    </div>
+                    <script type="text/javascript">
+
+                      featuredcontentslider.init({
+                          id: "slider1",  //id of main slider DIV
+                          contentsource: ["inline", ""],  //Valid values: ["inline", ""] or ["ajax", "path_to_file"]
+                          toc: "markup",  //Valid values: "#increment", "markup", ["label1", "label2", etc]
+                          nextprev: ["Previous", "Next"],  //labels for "prev" and "next" links. Set to "" to hide.
+                          revealtype: "click", //Behavior of pagination links to reveal the slides: "click" or "mouseover"
+                          enablefade: [true, 0.2],  //[true/false, fadedegree]
+                          autorotate: [true, 3000],  //[true/false, pausetime]
+                          onChange: function (previndex, curindex, contentdivs) {  //event handler fired whenever script changes slide
+                              //previndex holds index of last slide viewed b4 current (0=1st slide, 1=2nd etc)
+                              //curindex holds index of currently shown slide (0=1st slide, 1=2nd etc)
+                          }
+                      })
+                    </script>
+                  </div>
+                  <div class="order-right">
+                    <div class="order-detail">
+                      <label class="title-form" for="form">Nike Air Force 1 Low BLack White DV1331-100</label>
+                      <div class="product-end-price">
+                        2.790.000đ
+                      </div>
+                      <form action="" id="form" onsubmit="return checkvalue()">
+                            <div class="form-order" style="padding-top: 20px;">
+                                <label class="form-order-left" for="movement">Vận chuyển tới</label>
+                                <input type="text" id="movement"class="form-order-right">
+                            </div>
+                            <div class="form-order">
+                              <label class="form-order-left" for="color">Màu</label>
+                              <select name="color" id="color" class="form-order-right boder-option">
+                                <!-- <option value="Trắng" class="boder-option" >Trắng</option> -->
+                                <option value="Đen" class="boder-option">Đen - Vàng</option>
+                              </select>
+                            </div>
+                            <div class="form-order"> 
+                              <label class="form-order-left" for="size">Size</label>
+                              <select name="color" id="size" class="form-order-right boder-option">
+                                <option value="36" class="boder-option" >36</option>
+                                <option value="37" class="boder-option">37</option>
+                                <option value="38" class="boder-option" >38</option>
+                                <option value="39" class="boder-option">39</option>
+                                <option value="40" class="boder-option" >40</option>
+                                <option value="41" class="boder-option">41</option>
+                                <option value="42" class="boder-option" >42</option>
+                                <option value="43" class="boder-option">43</option>
+                              </select>
+                            </div>
+                            <div class="form-order" style="padding-top: 20px;">
+                              <label class="form-order-left" for="count">Số lượng</label>
+                              <div class="countdown form-order-right">
+                                <button class="btn" type="button" onclick="countdown(-1)">-</button>
+                                <input type="text" id="count" value="1">
+                                <button class="btn" type="button" onclick="countdown(1)">+</button>
+                                <script type="text/javascript">
+                                  function countdown(a)
+                                  {
+                                    let count = document.getElementById("count")
+                                    // console.log(count.value)
+                                    let number = Number(count.value) + a
+                                    if (number <= 0)
+                                    {
+                                      alert("Số lượng phải lớn hơn 0")
+                                      number = 1
+                                    }
+                                    count.value = number
+                                  }
+                                </script>
+                              </div>
+                          </div>
+                            <div class="order-submit form-order">
+                              <div class="left">
+                                <input type="button" class="order-submit-button order-submit-button-left" value="Thêm vào giỏ hàng">
+                              </div>
+                              <div class="right">
+                                <input type="submit" class="order-submit-button order-submit-button-right" Value="Mua ngay">
+                              </div>
+                            </div>
+                            <script type="text/javascript">
+                              function checkvalue()
+                              {
+                                let check = document.getElementById("movement")
+                                console.log(check)
+                                if (check.value == "")
+                                {
+                                  alert("Bạn chưa nhập địa chỉ")
+                                  check.focus()
+                                }
+                                return false
+                              }
+                            </script>
+                      </form>
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+          <div class="product-details">
+            <h3 class="product-details-header">
+              Chi tiết sản phẩm
+            </h3>
+            <div class="product-details-item">
+              <p class="product-details-item-left">
+                Danh mục
+              </p>
+              <p class="product-details-item-right">
+                <a href="../../index.html">Shoes</a>&ensp;
+                <a href="../product.html">Sản Phẩm</a>&ensp;
+                <a href="">Nike Air Force 1 Low BLack White DV1331-100</a>
+              </p>
+            </div>
+            <div class="product-details-item">
+              <p class="product-details-item-left">
+                Loại Khóa
+              </p>
+              <p class="product-details-item-right">
+                Khóa dây
+              </p>
+            </div>
+            <div class="product-details-item">
+              <p class="product-details-item-left">
+                Kho hàng
+              </p>
+              <p class="product-details-item-right">
+                462857
+              </p>
+            </div>
+            <div class="product-details-item">
+              <p class="product-details-item-left">
+                Chất Liệu
+              </p>
+              <p class="product-details-item-right">
+                Canvas
+              </p>
+            </div>
+            <div class="product-details-item">
+              <p class="product-details-item-left">
+                Xuất Xứ
+              </p>
+              <p class="product-details-item-right">
+                Việt Nam
+              </p>
+            </div>
+            <div class="product-details-item">
+              <p class="product-details-item-left">
+                Chiều cao cổ giày
+              </p>
+              <p class="product-details-item-right">
+                Cổ thấp
+              </p>
+            </div>
+            <div class="product-details-item">
+              <p class="product-details-item-left">
+                Giày cao gót
+              </p>
+              <p class="product-details-item-right">
+                Trung bình
+              </p>
+            </div>
+            <div class="product-details-item">
+              <p class="product-details-item-left">
+                Gửi từ
+              </p>
+              <p class="product-details-item-right">
+                Tầng 6, Tòa nhà Ladeco, 266 Đội Cấn, Phường Liễu Giai, Quận
+                    Ba Đình, TP Hà Nội
+              </p>
+            </div>
+            <h3 class="product-details-header">
+              Mô tả sản phẩm
+            </h3>
+            <div class="product-details-item">
+              <ul class="dot">
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li> 
+                <li>Vestibulum sagittis neque at est egestas venenatis.</li>
+                <li>Nam ullamcorper libero ac feugiat ultricies.</li>
+                <li>
+                  Donec lobortis nisl vel sapien blandit, vel feugiat elit eleifend.</li>
+                <li>Donec faucibus tellus accumsan leo sodales dictum.</li>
+                <li>Ut sit amet risus quis nulla sagittis varius.</li>
+              </ul>
+            </div>
+          </div>
+      </section>
+      <!----------------------------- Footer ------------------------------->
+      <section class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-column">
+              <a href="../../index.html" class="footer-logo"
+                ><img
+                  src="../../images/logo-nike.png"
+                  alt=""
+                  class="footer-logo-nike"
+              /></a>
+
+              <div class="footer-contact">
+                <div class="footer-contact-item">
+                  <i class="fa fa-location"></i>
+                  <span class="footer-contact-title"
+                    >Tầng 6, Tòa nhà Ladeco, 266 Đội Cấn, Phường Liễu Giai, Quận
+                    Ba Đình, TP Hà Nội
+                  </span>
+                </div>
+
+                <div class="footer-contact-item">
+                  <i class="fa fa-phone"></i>
+                  <span class="footer-contact-title">19006750 </span>
+                </div>
+
+                <div class="footer-contact-item">
+                  <i class="fa fa-headset"></i>
+                  <span class="footer-contact-title">support@sapo.vn </span>
+                </div>
+              </div>
+
+              <div class="footer-payment">
+                <a href="#" class="footer-payment-link"
+                  ><img
+                    src="../../images/payment-1.png"
+                    alt=""
+                    class="footer-payment-image" /></a
+                ><a href="#" class="footer-payment-link"
+                  ><img
+                    src="../../images/payment-2.png"
+                    alt=""
+                    class="footer-payment-image" /></a
+                ><a href="#" class="footer-payment-link"
+                  ><img
+                    src="../../images/payment-3.png"
+                    alt=""
+                    class="footer-payment-image" /></a
+                ><a href="#" class="footer-payment-link"
+                  ><img
+                    src="../../images/payment-4.png"
+                    alt=""
+                    class="footer-payment-image"
+                /></a>
+              </div>
+            </div>
+            <div class="footer-column">
+              <h3 class="footer-heading">Chính sách</h3>
+              <a href="../../index.html" class="footer-nav-link">Trang chủ</a>
+              <a href="../introduce.html" class="footer-nav-link">Giới thiệu</a>
+              <a href="../product.html" class="footer-nav-link">Sản phẩm</a>
+              <a href="../news.html" class="footer-nav-link">Tin tức</a>
+              <a href="../contact.html" class="footer-nav-link">Liên hệ</a>
+            </div>
+            <div class="footer-column">
+              <h3 class="footer-heading">Theo dõi chúng tôi</h3>
+              <div class="footer-social-list">
+                <a href="https://www.facebook.com/lynguyenminh2k2" class="footer-social-icon"
+                  ><i class="fab fa-facebook"></i></a
+                ><a href="https://www.facebook.com/lynguyenminh2k2" class="footer-social-icon"
+                  ><i class="fab fa-instagram"></i></a
+                ><a href="https://www.facebook.com/lynguyenminh2k2" class="footer-social-icon"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+              </div>
+              <h3 class="footer-heading">Đăng ký để nhận tin</h3>
+              <form action="" class="footer-form">
+                <input
+                  type="email"
+                  name=""
+                  placeholder="Nhập địa chỉ email"
+                  id=""
+                  class="footer-form-input"
+                />
+                <button type="submit" class="footer-form-button">Gửi</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="../../script/loadpage.js"></script>
+  </body>
+</html>
+  
