@@ -173,7 +173,7 @@
                       <div class="product-end-price">
                         3.890.000đ
                       </div>
-                      <form action="" id="form">
+                      <form action="" id="form" onsubmit="return checkvalue()">
                             <div class="form-order" style="padding-top: 20px;">
                                 <label class="form-order-left" for="movement">Vận chuyển tới</label>
                                 <input type="text" id="movement"class="form-order-right">
@@ -222,12 +222,25 @@
                           </div>
                             <div class="order-submit form-order">
                               <div class="left">
-                                <input type="submit" class="order-submit-button order-submit-button-left" value="Thêm vào giỏ hàng">
+                                <input type="button" class="order-submit-button order-submit-button-left" value="Thêm vào giỏ hàng">
                               </div>
                               <div class="right">
                                 <input type="submit" class="order-submit-button order-submit-button-right" Value="Mua ngay">
                               </div>
                             </div>
+                            <script type="text/javascript">
+                              function checkvalue()
+                              {
+                                let check = document.getElementById("movement")
+                                console.log(check)
+                                if (check.value == "")
+                                {
+                                  alert("Bạn chưa nhập địa chỉ")
+                                  check.focus()
+                                }
+                                return false
+                              }
+                            </script>
                       </form>
                     </div>
                     <div>
