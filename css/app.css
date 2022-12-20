@@ -1399,8 +1399,9 @@ ul.dot{
 {
   border: 2px solid #ccc;
   padding: 6px;
-  transform: translateY(-20%);
+  transform: translateY(-18%);
   width: 50px;
+  min-height: 36px;
   text-align: center;
 }
 
@@ -1416,7 +1417,14 @@ ul.dot{
   }
   .order-submit .right
   {
-    margin-left:20%;
+    position: relative;
+    right: 0px;
+    width:50%;
+  }
+  .order-submit .right input
+  {
+    position: absolute;
+    right: 0px;
   }
 }
 @media screen and (max-width: 767px)
@@ -1451,21 +1459,45 @@ ul.dot{
     justify-self:center;
     padding-left:0;
     width:50%;
+    position: relative;
+    min-height:28px;
   }
   .order-submit .right
   {
     position: relative;
-    right: 0;
     width:50%;
+    min-height: 28px;
+    margin-left: 5px;
+  }
+  .order-submit .left input, .order-submit .right input
+  {
+    position:absolute;
+  }
+  .order-submit .left input
+  {
+    right: 0px;
+  }
+  .order-submit .right input
+  {
+    left: 0px;
+    max-width: 50%;
   }
   .order-submit.form-order{
     display:flex;
     padding:10px 0px;
     break-inside: avoid;
   }
+  .form-order{
+    display:flex;
+    padding:10px 10px;
+    break-inside: avoid;
+  }
   .countdown button{
-    padding: 6px 3
-    px;
+    padding: 6px 6px;
+  }
+  .countdown
+  {
+    max-width: 100%;
   }
   .product-details-item-left,.product-details-item-right
   {
