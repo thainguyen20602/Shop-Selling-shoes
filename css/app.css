@@ -1476,11 +1476,12 @@ ul.dot{
   .order-submit .left input
   {
     right: 0px;
+    min-width: 100%;
   }
   .order-submit .right input
   {
     left: 0px;
-    max-width: 50%;
+    max-width: 100%;
   }
   .order-submit.form-order{
     display:flex;
