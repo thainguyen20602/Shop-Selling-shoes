@@ -1504,4 +1504,7 @@ ul.dot{
     margin:5px 5px;
     padding:5px 5px;
   }
+  .form-order-right {
+    margin-left: 10px;
+  }
 }
