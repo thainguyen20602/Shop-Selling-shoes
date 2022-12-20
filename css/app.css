@@ -1439,4 +1439,37 @@ ul.dot{
     background-color:#fff;
     padding:10px;
   }
+  .order-submit-button
+  {
+    border: 1px solid #ee4d2d;
+    border-radius: 5px;
+    padding:5px;
+  }
+  .order-submit .left
+  {
+    /* display:flex; */
+    justify-self:center;
+    padding-left:0;
+    width:50%;
+  }
+  .order-submit .right
+  {
+    position: relative;
+    right: 0;
+    width:50%;
+  }
+  .order-submit.form-order{
+    display:flex;
+    padding:10px 0px;
+    break-inside: avoid;
+  }
+  .countdown button{
+    padding: 6px 3
+    px;
+  }
+  .product-details-item-left,.product-details-item-right
+  {
+    margin:5px 5px;
+    padding:5px 5px;
+  }
 }

@@ -19,22 +19,19 @@ left: 0; /*leave as is*/
 top: 0;  /*leave as is*/
 padding: 5px;
 background: white;
-width: 390px; /*width of content DIVs within slider. Total width should equal slider's inner width (390+5+5=400) */
+width: calc(100%); /*width of content DIVs within slider. Total width should equal slider's inner width (390+5+5=400) */
 height: 100%;
 filter:progid:DXImageTransform.Microsoft.alpha(opacity=100);
 -moz-opacity: 1;
 opacity: 1;
 /* text-align: center; */
 }
-.sliderwrapper .contentdiv
-{
-    display: flex;
-    justify-content: center;
-}
+
 .sliderwrapper .contentdiv img
 {
     display: block;
     width: 100%;
+    max-height: 248px;
     /* float: center; */
     margin-left:auto;
     margin-right:auto;
@@ -65,36 +62,4 @@ margin:5px ;
 color: #000;
 border: 2px solid #ee4d2d;
 }
-@media screen and (max-width: 1023px)
-{
-    .sliderwrapper .contentdiv{
-        visibility: hidden; /*leave as is*/
-        position: absolute; /*leave as is*/
-        left: 0;  /*leave as is*/
-        top: 0;  /*leave as is*/
-        padding: 5px;
-        background: white;
-        width: 100%; /*width of content DIVs within slider. Total width should equal slider's inner width (390+5+5=400) */
-        height: 100%;
-        filter:progid:DXImageTransform.Microsoft.alpha(opacity=100);
-        -moz-opacity: 1;
-        opacity: 1;
-    }
-}
 
-@media screen and (max-width: 767px)
-{
-    .sliderwrapper .contentdiv{
-        visibility: hidden; /*leave as is*/
-        position: absolute; /*leave as is*/
-        left: 0;  /*leave as is*/
-        top: 0;  /*leave as is*/
-        padding: 5px;
-        background: white;
-        width: 390px; /*width of content DIVs within slider. Total width should equal slider's inner width (390+5+5=400) */
-        height: 100%;
-        filter:progid:DXImageTransform.Microsoft.alpha(opacity=100);
-        -moz-opacity: 1;
-        opacity: 1;
-        }
-}
