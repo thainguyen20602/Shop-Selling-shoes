@@ -620,6 +620,10 @@ a.login-menu-link:hover
   text-overflow: ellipsis;
   word-break: break-word;
 }
+.dropdown-content
+{
+  z-index: 100;
+}
 .news-author {
   color: #999999;
   margin-right: 1rem;
