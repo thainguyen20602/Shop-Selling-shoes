@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <link rel="stylesheet" href="css/hover-dropdown.css">
+    <link rel="stylesheet" href="css/fontawesome.css" />
+    <!-- <link rel="stylesheet" href="css/app1.css"> -->
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/SlideShow.css">
+    <title>Shoes</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!----------------------------- Header ------------------------------->
+      <section class="header">
+        <div class="container">
+          <div class="header-left">
+            <!-- Logo -->
+            <img src="./images/logo-nike.png" alt="" class="header-logo-nike" />
+          </div>
+
+          <!----------------------------- Navigation ------------------------------->
+          <div class="header-middle">
+            <ul class="header-nav">
+              <li class="header-nav-item">
+                <a href="index.html" class="header-nav-link">Trang chủ</a>
+              </li>
+
+              <li class="header-nav-item">
+                <a href="./pages/introduce.html" class="header-nav-link">Giới thiệu</a>
+              </li>
+
+              <li class="header-nav-item">
+                <a href="./pages/product.html" class="header-nav-link">Sản phẩm</a>
+              </li>
+
+              <li class="header-nav-item">
+                <a href="./pages/news.html" class="header-nav-link">Tin tức</a>
+              </li>
+
+              <!-- <li class="header-nav-item">
+                <a href="./pages/contact.html" class="header-nav-link">Liên hệ</a>
+              </li> -->
+            </ul>
+          </div>
+
+          <div class="header-right">
+            <ul class="header-group">
+              <!-- <li class="header-group-item">
+                <input class="tim" id="tim" type="text">
+                <button class="hienhien" style="background-color:#120414;" onclick="tim()"><i class="fa fa-light fa-search header-icon header-search"></i></button>
+              </li> -->
+
+              <input type="text" id="search-input">
+              <button id="search-button">Search</button>
+              
+              <script>
+              const searchButton = document.getElementById('search-button');
+              searchButton.addEventListener('click', function() {
+                const searchInput = document.getElementById('search-input').value;
+                window.location.href = `pages/images.html?search=${searchInput}`;
+              });
+              </script>
+              <i class="fa fa-bars header-toggle dropdown" >   
+                <div class="dropdown-content">
+                  <a href="index.html" >Trang chủ</a>
+                  <a href="./pages/introduce.html">Giới thiệu</a>
+                  <a href="./pages/product.html" >Sản phẩm</a>
+                  <a href="./pages/news.html" >Tin tức</a>
+                  <!-- <a href="./pages/contact.html" >Liên hệ</a> -->
+                </div>
+              </i>
+
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="container">
+        <!----------------------------- Slider ------------------------------->
+        <div class="slideshow-container">
+
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="./images/banner2.jpg" style="width:100%">
+            <div class="text">Caption Text</div>
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="./images/banner3.jpg" style="width:100%">
+            <div class="text">Caption Two</div>
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="./images/banner4.png" style="width:100%">
+            <div class="text">Caption Three</div>
+          </div>
+        
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        <script src="./script/SlideShow.js"> 
+        </script>
+
+        <!----------------------------- Content ------------------------------->
+
+        <section class="content">
+          <div class="container">
+            <div class="content-title">
+              <span class="content-heading">Results Generated by AI </span>
+              <span class="content-desc"
+                ></span
+              >
+            </div>
+
+            <!-- Discovery -->
+            <div class="content-list">
+            </div>
+          </div>
+        </section>
+
+        <!----------------------------- News ------------------------------->
+        <section class="news">
+          <div class="container">
+            <div class="content-title">
+              <span class="content-heading">Thành viên</span>
+              <span class="content-desc">
+                <!-- Người thành lập -->
+              </span>
+            </div>
+            <div class="news-list">
+              <div class="news-item">
+                <img src="./images/nam.jpg" alt="" class="news-image" />
+                <div class="news-content">
+                  <a href="https://www.facebook.com/nghoainam.uit">
+                    <h2 class="news-heading">
+                      Nguyễn Hoài Nam-20520075
+                    </h2>
+                  </a>
+
+                  <p class="news-desc">
+                    Là một thành viên luôn vui vẻ, hòa đồng và yêu thích cái đẹp
+                  </p>
+                </div>
+              </div>
+
+              <div class="news-item">
+                <img src="./images/thai.jpg" alt="" class="news-image" />
+                <div class="news-content">
+                  <a href="https://www.facebook.com/me.vo.yeu.tham.336">
+                    <h2 class="news-heading">
+                      Nguyễn Khắc Thái-20521888
+                    </h2>
+                  </a>
+                  <p class="news-desc">
+                    Luôn yêu cái đẹp, luôn hoàn thiện bản thân ngày một tốt hơn.
+                  </p>
+                </div>
+              </div>
+
+              <div class="news-item">
+                <img src="./images/anh.jpg" alt="" class="news-image" />
+                <div class="news-content">
+                  <a href="https://www.facebook.com/anhphamTL16">
+                    <h2 class="news-heading">
+                      Phạm Đức Anh-20521076
+                    </h2>
+                  </a>
+                  <p class="news-desc">
+                    Yêu biển cả, yêu bầu trời.
+                  </p>
+                </div>
+              </div>
+              <div class="news-item">
+                <img src="./images/ly (2).jpg" alt="" class="news-image" />
+                <div class="news-content">
+                  <a href="https://www.facebook.com/lynguyenminh2k2">
+                    <h2 class="news-heading">
+                      Nguyễn Minh Lý-20521592
+                    </h2>
+                  </a>
+                  <p class="news-desc">
+                    Vui vẻ, hòa đồng, hoạt bát và đặt biệt chưa có bồ!!!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <!----------------------------- Footer ------------------------------->
+      <section class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-column">
+              <a href="index.html" class="footer-logo"
+                ><img
+                  src="./images/logo-nike.png"
+                  alt=""
+                  class="footer-logo-nike"
+              /></a>
+
+              <div class="footer-contact">
+                <div class="footer-contact-item">
+                  <i class="fa fa-location"></i>
+                  <span class="footer-contact-title"
+                    >Khoa KHMT, Trường Đại học CNTT, TP.HCM
+                  </span>
+                </div>
+
+                <div class="footer-contact-item">
+                  <i class="fa fa-phone"></i>
+                  <span class="footer-contact-title">07385637295 </span>
+                </div>
+
+                <div class="footer-contact-item">
+                  <i class="fa fa-headset"></i>
+                  <span class="footer-contact-title">support@sapo.vn </span>
+                </div>
+              </div>
+
+              <div class="footer-payment">
+                <a href="#" class="footer-payment-link"
+                  ><img
+                    src="./images/payment-1.png"
+                    alt=""
+                    class="footer-payment-image" /></a
+                ><a href="#" class="footer-payment-link"
+                  ><img
+                    src="./images/payment-2.png"
+                    alt=""
+                    class="footer-payment-image" /></a
+                ><a href="#" class="footer-payment-link"
+                  ><img
+                    src="./images/payment-3.png"
+                    alt=""
+                    class="footer-payment-image" /></a
+                ><a href="#" class="footer-payment-link"
+                  ><img
+                    src="./images/payment-4.png"
+                    alt=""
+                    class="footer-payment-image"
+                /></a>
+              </div>
+            </div>
+            <div class="footer-column">
+              <h3 class="footer-heading">Chính sách</h3>
+              <a href="index.html" class="footer-nav-link">Trang chủ</a>
+              <a href="./pages/introduce.html" class="footer-nav-link">Giới thiệu</a>
+              <a href="./pages/product.html" class="footer-nav-link">Sản phẩm</a>
+              <a href="./pages/news.html" class="footer-nav-link">Tin tức</a>
+              <a href="./pages/contact.html" class="footer-nav-link">Liên hệ</a>
+            </div>
+            <div class="footer-column">
+              <h3 class="footer-heading">Theo dõi chúng tôi</h3>
+              <div class="footer-social-list">
+                <a href="https://www.facebook.com/lynguyenminh2k2" class="footer-social-icon"
+                  ><i class="fab fa-facebook"></i></a
+                ><a href="https://www.facebook.com/lynguyenminh2k2" class="footer-social-icon"
+                  ><i class="fab fa-instagram"></i></a
+                ><a href="https://www.facebook.com/lynguyenminh2k2" class="footer-social-icon"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+              </div>
+              <h3 class="footer-heading">Đăng ký để nhận tin</h3>
+              <form action="" class="footer-form">
+                <input
+                  type="email"
+                  name=""
+                  placeholder="Nhập địa chỉ emal"
+                  id=""
+                  class="footer-form-input"
+                />
+                <button type="submit" class="footer-form-button">Gửi</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="./script/loadpage.js"></script>
+    <script src="./script/snow.js"></script>
+    <script>
+    const search = new URL(window.location.href).searchParams.get('search');
+    fetch('http://103.186.100.203:9000/json/test/shoe_discovery.json')
+      .then(response => response.json())
+      .then(data => {
+        // const imagesContainer = document.getElementById('images-container');
+        const contentList = document.querySelector(".content-list")
+        for (let i = 20; i<24; i++) {
+          const image = data[i];
+          const imageElement = document.createElement('img');
+          // imageElement.src = image.src;
+          // imagesContainer.appendChild(imageElement);
+          // const contentItem = document.createElement("div");
+          // contentItem.classList.add("content-item"); 
+
+          
+          const contentItem = document.createElement("div");
+          contentItem.classList.add("content-item");
+        
+          const contentImage = document.createElement("img");
+          contentImage.src = data[i].url;
+          contentImage.alt = "";
+          contentImage.classList.add("content-image");
+        
+          contentItem.appendChild(contentImage);
+          contentList.appendChild(contentItem);      
+        }
+      })
+      .catch(error => console.error(error));
+    </script>
+  </body>
+</html>
+

@@ -11,6 +11,14 @@ function tim(){
   }
 }
 
+function search(){
+  const searchButton = document.getElementById('search-button');
+  searchButton.addEventListener('click', function() {
+  const searchInput = document.getElementById('search-input').value;
+  window.location.href = `images.html?search=${searchInput}`;
+  });
+}
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
