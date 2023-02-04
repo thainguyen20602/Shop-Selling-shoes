@@ -1539,3 +1539,33 @@ ul.dot{
     margin-left: 10px;
   }
 }
+
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.search-box {
+  width: 100%;
+  height: 25%;
+  border-radius: 25px;
+  border: 2px solid #333;
+  padding: 10px;
+  font-size: 20px;
+  color: #000;
+}
+
+.search-button {
+  width: 25%;
+  height: 25%;
+  background-color: #333;
+  color: #fff;
+  border-radius: 25px;
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
