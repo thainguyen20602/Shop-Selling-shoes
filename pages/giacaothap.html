@@ -32,55 +32,70 @@
           <!----------------------------- Navigation ------------------------------->
           <div class="header-middle">
             <ul class="header-nav">
-              <li class="header-nav-item">
-                <a href="../index.html" class="header-nav-link">Trang chủ</a>
+              <!-- <li class="header-nav-item">
+                <a href="index.html" class="header-nav-link">Trang chủ</a>
               </li>
 
               <li class="header-nav-item">
-                <a href="introduce.html" class="header-nav-link">Giới thiệu</a>
+                <a href="./pages/introduce.html" class="header-nav-link">Giới thiệu</a>
               </li>
 
               <li class="header-nav-item">
-                <a href="product.html" class="header-nav-link">Sản phẩm</a>
+                <a href="./pages/product.html" class="header-nav-link">Sản phẩm</a>
               </li>
 
               <li class="header-nav-item">
-                <a href="news.html" class="header-nav-link">Tin tức</a>
-              </li>
+                <a href="./pages/news.html" class="header-nav-link">Tin tức</a>
+              </li> -->
 
               <li class="header-nav-item">
-                <a href="contact.html" class="header-nav-link">Liên hệ</a>
+                <a href="../index.html" class="header-nav-link">Home</a>
               </li>
+              <li class="header-nav-item">
+                <a href="./news.html" class="header-nav-link">Discovery</a>
+              </li>
+              <li class="header-nav-item">
+                <a href="./product.html" class="header-nav-link">Shoes Photo</a>
+              </li>
+              <li class="header-nav-item">
+                <a href="./introduce.html" class="header-nav-link">About me</a>
+              </li>
+
+              
             </ul>
           </div>
 
           <div class="header-right">
             <ul class="header-group">
-              <li class="header-group-item">
-                <input class="tim" id="tim" type="text">
-                <button class="hienhien" style="background-color:#120414;" onclick="tim()"><i class="fa fa-light fa-search header-icon header-search"></i></button>
-              </li>
-              <li class="header-group-item">
-                <a href="login.html" class="header-group-link">
-                  <i class="fa fa-user header-user header-icon"></i>
-                </a>
-              </li>
 
-              <li class="header-group-item">
-                <a href="#" class="header-group-link"
-                  ><i class="fa fa-shopping-cart header-icon header-cart"></i
-                ></a>
-              </li>
+              <div class="search-container">
+                  <input type="text" class="search-box" id="search-input" placeholder="Search">
+                  <button type="submit" class="search-button" id="search-button">Search</button>
+              </div>
+
+              <script>
+              const searchButton = document.getElementById('search-button');
+              searchButton.addEventListener('click', function() { 
+                const searchInput = document.getElementById('search-input').value;
+                window.location.href = `../searchresult.html?search=${searchInput}`;
+              });
+              </script>
 
               <i class="fa fa-bars header-toggle dropdown" >   
+                <!-- <div class="dropdown-content">
+                  <a href="index.html" >Trang chủ</a>
+                  <a href="./pages/introduce.html">Giới thiệu</a>
+                  <a href="./pages/product.html" >Sản phẩm</a>
+                  <a href="./pages/news.html" >Tin tức</a>
+                </div> -->
                 <div class="dropdown-content">
-                  <a href="../index.html" >Trang chủ</a>
-                  <a href="introduce.html">Giới thiệu</a>
-                  <a href="product.html" >Sản phẩm</a>
-                  <a href="news.html" >Tin tức</a>
-                  <a href="contact.html" >Liên hệ</a>
-                </div>
+                  <a href="../index.html" >Home</a>
+                  <a href="./news.html" >Discovery</a>
+                  <a href="./product.html" >Shoes Photo</a>
+                  <a href="./introduce.html">About me</a>
+                </div>     
               </i>
+
             </ul>
           </div>
         </div>

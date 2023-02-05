@@ -142,6 +142,7 @@ button {
   margin-right: 3rem;
   position: relative;
   cursor: pointer;
+  font-size: 20px;
 }
 .header-nav-item:hover {
   color: #fe6b5e;
@@ -184,7 +185,7 @@ button {
 .content {
   padding: 7rem 5rem;
   color: #120414;
-  background: rgba(0, 0, 0, 0.9) url(/images/banner2.jpg);
+  background: rgb(0 0 0 / 0%) url(/images/banner2.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -199,7 +200,7 @@ button {
   position: relative;
   padding-left: 3rem;
   padding-right: 2rem;
-  color: white;
+  color: #000;
 }
 .content-heading::before {
   content: "";
@@ -207,7 +208,7 @@ button {
   color:#fff;
   width: 1rem;
   height: 1rem;
-  background-color: #fff;
+  background-color: #000;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
@@ -217,7 +218,7 @@ button {
   position: absolute;
   width: 1rem;
   height: 1rem;
-  background-color: #fff;
+  background-color: #000;
   right: 0;
   top: 50%;
   color:#fff;
@@ -233,7 +234,7 @@ button {
 .content-desc {
   display: block;
   margin-bottom: 3rem;
-  color: #fff;
+  color: #000;
 }
 .content-list {
   display: flex;
@@ -253,7 +254,11 @@ button {
   width: 30rem;
   object-fit: cover;
 }
-
+.content-item img
+{
+  border-radius: 15px;
+  border: 1px solid rgba(0, 0, 0, 10%);
+}
 .footer {
   position: relative;
   padding: 6rem 4rem;
@@ -411,8 +416,10 @@ a.login-menu-link:hover
   .header-nav-item:hover .header-nav-link {
     color: #fe6b5e;
     transition: all 0.25s linear;
+    /* font-size: 20px; */
   }
   .header-nav-link {
+    font-size: 20px;
     color: #333333;
   }
   .header-toggle {
@@ -627,6 +634,7 @@ a.login-menu-link:hover
 .dropdown-content
 {
   z-index: 100;
+
 }
 .news-author {
   color: #999999;
@@ -1568,4 +1576,30 @@ ul.dot{
   padding: 10px 20px;
   font-size: 20px;
   cursor: pointer;
+}
+.search-button:hover {
+  background-color: red;
+}
+@media screen and (max-width: 767px)
+{
+  .search-box {
+    width: 100%;
+    height: 20%;
+    border-radius: 25px;
+    border: 2px solid #333;
+    padding: 5px;
+    font-size: 15px;
+    color: #000;
+  }
+  .search-button {
+    width: 50%;
+    height: 20%;
+    background-color: #333;
+    color: #fff;
+    border-radius: 25px;
+    border: none;
+    padding: 7px 5px;
+    font-size: 15px;
+    cursor: pointer;
+  }
 }
