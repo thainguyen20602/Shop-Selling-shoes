@@ -132,7 +132,7 @@
             </ul>
         </div>
       </section>
-
+      <div class="locationbox__overlay" id ="locationbox__overlay"></div>
       <!----------------------------- Product ------------------------------->
       <section class="product-detail">
           <div class="product-detail-order">
@@ -347,6 +347,222 @@
                 <li>Ut sit amet risus quis nulla sagittis varius.</li>
               </ul>
             </div>
+          </div>
+          <div class="product-comments">
+            <h3 class="product-details-header">
+              Đánh giá sản phẩm
+            </h3>
+            <div class="product-comments-ratings">
+              <div class = "product-comments-ratings-left">
+                <div>
+                  <span class = "score" id="rating-number" >5.0</span>
+                  <span>trên 5</span>
+                </div>
+                <div class="rating-star" id="rating">
+                  <div class="star">
+                    <span class="star__point">
+                      <i class="fas fa-star"></i>
+                    </span>
+                    <span class="star__point">
+                      <i class="fas fa-star"></i>
+                    </span>
+                    <span class="star__point">
+                      <i class="fas fa-star"></i>
+                    </span>
+                    <span class="star__point">
+                      <i class="fas fa-star"></i>
+                    </span>
+                    <span class="star__point">
+                      <i class="fas fa-star"></i> 
+                    </span>
+                  </div>
+                </div>
+                <script>
+                  let rating = 4.5; // Example rating
+
+                  // Get the rating element and number element
+                  let stars = document.querySelectorAll("#rating .star__point");
+                  let ratingNumber = document.querySelector("#rating-number");
+
+                  // Display the rating number
+                  ratingNumber.innerHTML = rating;
+
+                  // Loop through the stars and add the active class to the correct number of stars
+                  for (let i = 0; i < 5; i++) {
+                    // console.log(stars[i].lastElementChild.className)
+                    // console.log((rating*10)%10)
+                    if (i < Math.floor(rating)) {
+                      stars[i].lastElementChild.className = "fas fa-star"
+                    } else {
+                      if ((rating*10)%10 == 5&& rating == i + 0.5)
+                      {
+                        stars[i].lastElementChild.className = "fas fa-star-half-alt"
+                      }
+                      else
+                      {
+                        stars[i].lastElementChild.className = "far fa-star"
+                      }
+                    }
+                  }
+                </script>
+              </div>
+              <div class = "product-comments-ratings-right"> 
+                <ul class="raiting-list">
+                    <li>
+                      <div class="number-star">
+                        5
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <div class="timeline-star">
+                        <p class="timing" ></p>
+                      </div>
+                      <div class = "number-percent">50%</div>
+                    </li>
+                    <li>
+                      <div class="number-star">
+                        4 
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <div class="timeline-star">
+                        <p class="timing" ></p>
+                      </div>
+                      <div class = "number-percent">50%</div>
+                    </li>
+                    <li>
+                      <div class="number-star">
+                        3
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <div class="timeline-star">
+                        <p class="timing" ></p>
+                      </div>
+                      <div class = "number-percent">50%</div>
+                    </li>
+                    <li>
+                      <div class="number-star">
+                        2
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <div class="timeline-star">
+                        <p class="timing" ></p>
+                      </div>
+                      <div class = "number-percent">50%</div>
+                    </li>
+                    <li>
+                      <div class="number-star">
+                        1
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <div class="timeline-star">
+                        <p class="timing" ></p>
+                      </div>
+                      <div class = "number-percent">50%</div>
+                    </li>
+                </ul>
+              </div>
+            </div>
+            <div class = "comment">
+              Here
+            </div>
+            <div class = "comment-btn">
+              <div class="comment-btn-add" onclick="showform()">
+                 <p>
+                  <i class="fas fa-comment-plus"></i>
+                  Viết đánh giá
+                 </p> 
+              </div>
+            </div>
+            <div class="read-assets hide" id = "read-assets">
+              <div class="read-assets-top">
+                <p class="read-assets-title">
+                  Đánh giá
+                </p>
+                <div class="read-assets-close btn-close-menu" id = "btn-close-menu" onclick="hideshow()">Đóng
+                </div>
+              </div>
+              <div class="read-assets-main">
+                <div class="box-cmt-popup">
+                  <div class="infor">
+                    Nike Air Force 1 07 Black Laser Orange FB7162-081
+                  </div>
+                  <div class="select-star">
+                    <ul class = "ul-star">
+                      <li onclick="select_start(1)">
+                        <i class="far fa-star"></i>
+                        <p>Rất tệ</p>
+                      </li>
+                      <li onclick="select_start(2)">
+                        <i class="far fa-star"></i>
+                        <p>Tệ</p>
+                      </li>
+                      <li onclick="select_start(3)">
+                        <i class="far fa-star"></i>
+                        <p>Bình thường</p>
+                      </li>
+                      <li onclick="select_start(4)">
+                        <i class="far fa-star"></i>
+                        <p>Tốt</p>
+                      </li>
+                      <li onclick="select_start(5)">
+                        <i class="far fa-star"></i>
+                        <p>Rất tốt</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class = "read-assess-form">
+                    <div class="textarea">
+                      <div class="inputrating__group">
+                        <textarea name="" id="" placeholder="Mời bạn chia sẻ một số cảm nhận về sản phẩm ..."></textarea>
+                      </div>
+                    </div>
+                    <div class="list-input">
+                      <input type="text" class="input-assess" placeholder="Họ và tên (bắc buộc)">
+                    </div>
+                    <div class="submit-assess">
+                    Gửi đánh giá ngay
+                    </div>
+                  </div>
+                  <script>
+                    function select_start(number)
+                    {
+                      let selected_start = document.getElementsByClassName("ul-star")[0]
+                      let childElement = selected_start.children
+                      for (let i = 0; i < 5; i++)
+                      {
+                        childElement[i].children[0].className = "far fa-star"
+                        childElement[i].children[1].className = ""
+                      }
+                      for (let i = 0; i < number; i++)
+                      {
+                        childElement[i].children[0].className = "fas fa-star"
+                      }
+                      childElement[number-1].children[1].className = "active"
+                      let show_fomr = document.getElementsByClassName("read-assess-form")[0]
+                      show_fomr.style.display = "block"
+                    }
+                  </script>
+                </div>
+              </div>
+            </div>
+            <script>
+              function showform()
+              {
+                let show = document.getElementById("read-assets")
+                // console.log(show)
+                show.className = show.className.replace(" hide"," show")
+                let showR = document.getElementById("locationbox__overlay")
+                showR.style.display = "block"
+              }
+              function hideshow()
+              {
+                let show = document.getElementById("read-assets")
+                // console.log(show)
+                show.className = show.className.replace(" show"," hide")
+                let showR = document.getElementById("locationbox__overlay")
+                showR.style.display = "none"
+              }
+            </script>
+            
           </div>
       </section>
       <!----------------------------- Footer ------------------------------->

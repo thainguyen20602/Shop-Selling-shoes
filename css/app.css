@@ -195,7 +195,7 @@ button {
   font-size: 4rem;
   display: block;
   font-weight: 600;
-  letter-spacing: 1.2rem;
+  letter-spacing: 1rem;
   margin-bottom: 1rem;
   position: relative;
   padding-left: 3rem;
@@ -391,6 +391,12 @@ a.login-menu-link:hover
   .header {
     padding: 2.4rem 3rem;
   }
+  .content-heading {
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 1rem;
+    margin-bottom: 1rem;
+  }
   .header-middle {
     position: fixed;
     left: 0;
@@ -459,6 +465,12 @@ a.login-menu-link:hover
   .header-logo-nike {
     width: 7rem;
     height: 2rem;
+  }
+  .content-heading {
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing:normal;
+    margin-bottom: 1rem;
   }
   .content {
     padding: 2rem 1rem;
@@ -1443,9 +1455,310 @@ ul.dot{
   text-align: center;
 }
 
+.product-comments
+{
+  margin:20px 0;
+  background-color:#fff;
+  position: relative;
+  top: 5%;
+  left: 5%;
+  padding: 20px 30px;
+  width: 90%;
+}
+.product-comments-ratings
+{
+  background-color: #fffbf8;
+    min-height: 5rem;
+    border: 1px solid #f9ede5;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    border-radius: 2px;
+    box-sizing: border-box;
+    padding: 30px;
+    margin: 16px 0;
+}
+.product-comments-ratings-left
+{
+  text-align: center;
+  margin-right: 1.875rem;
+  color: #ee4d2d;
+  font-size: 1.875rem;
+}
+.product-comments-ratings-left .score
+{
+  font-weight: bold;
+  font-size: calc(1.875rem*1.5);
+}
+.star {
+  display: inline-block;
+  margin: 10px;
+}
+
+.star__point {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  /* border-right: 20px solid transparent; */
+  /* border-bottom: 20px solid yellow; */
+  /* border-left: 20px solid transparent;
+  transform: rotate(40deg); */
+  margin: 0 10px;
+}
+
+
+/* @media only screen and (max-width: 767px) {
+  .star__point {
+    border-bottom: 10px solid yellow;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+  }
+} */
 /* @media screen and (max-width: 767px) */
+.raiting-list
+{
+  margin-left: 20px;
+}
+.raiting-list li
+{
+  display: flex;
+  margin-bottom: 7px;
+  align-items: center;
+}
+.timeline-star
+{
+  background-color: #eee;
+  height: 4px;
+  position: relative;
+  min-width: 150px;
+  width: calc(100% - 60px);
+}
+.raiting-list .timing {
+  background-color: #fe8c23;
+  left: 0;
+  height: 4px;
+  width: 50%;
+  position: absolute;
+  top: 0;
+}
+.number-star
+{
+  font-size: 15px;
+  line-height: 14px;
+  text-align: left;
+  width: 40px;
+}
+.number-percent
+{
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 15px;
+  padding-left: 10px;
+  text-align: left;
+  width: 35px;
+  color: #666;
+}
+.comment, .comment-btn
+{
+  border-top: 1px solid #e0e0e0;
+  padding: 15px 10px;
+}
+.comment-btn
+{
+  position: relative;
+}
+.comment-btn-add
+{
+  width: 50%;
+  margin:auto;
+  height: 50px;
+  background-color: #2f80ed;
+  border: 1px solid #2f80ed;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+  /* padding:11px auto; */
+  cursor: pointer;
+}
+.comment-btn-add p {
+  margin: 12px auto;
+}
+.read-assets
+{
+  background-color: #fff;
+  border-radius: 8px;
+  left: 50%;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 13;
+  overflow-y: auto;
+  max-height: 90vh;
+  width: 530px;
+}
+.read-assets.hide
+{
+  display: none;
+}
+.read-assets-title
+{
+  font-weight: bold;
+  line-height: 20px;
+}
+.read-assets-close
+{
+  position: absolute;
+  top: 16px;
+  right: 20px;
+}
+.btn-close-menu
+{
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  color: #333;
+  cursor: pointer;
+  float: right;
+  line-height: 21px;
+  padding: 7px;
+  /* position: relative; */
+  text-align: right;
+  width: 67px;
+}
+.read-assets-main
+{
+  padding: 0 45px;
+}
+.read-assets-main .box-cmt-popup
+{
+  display: block;
+  overflow: hidden;
+  padding: 12px 0;
+}
+.locationbox__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 12;
+  background: rgba(0,0,0,.75);
+  display: none;
+  margin: auto;
+}
+.read-assets .read-assets-top
+{
+  border-bottom: 1px solid #e0e0e0;
+  padding: 25px 20px 15px 45px;
+}
+.read-assets.show
+{
+  display:block;
+}
+.select-star
+{
+  display: flex;
+  margin: 20px 0 0;
+  justify-content: center;
+}
+.select-star .ul-star
+{
+  display: flex;
+  justify-content: center;
+  width: 270px;
+}
+.select-star .ul-star li{
+  cursor: pointer;
+    margin: 0 6px;
+    text-align: center;
+    font-size: 25px;
+    width: 45px;
+}
+.select-star .ul-star li i
+{
+  color:#fe8c23;
+}
+.select-star .ul-star li p{
+  font-size: 12px;
+  line-height: 14px;
+  margin-top: 8px;
+}
+.select-star .ul-star li p.active
+{
+  color:#fe8c23;
+  font-weight: bold;
+}
+.read-assess-form
+{
+  display: none;
+}
+.read-assess-form .textarea
+{
+  border: 1px solid #bdbdbd;
+  border-radius: 4px;
+}
+.input-assess {
+  border: 1px solid #bdbdbd;
+  border-radius: 4px;
+  color: #666;
+  height: 40px;
+  line-height: 20px;
+  margin-right: 12px;
+  padding: 10px;
+  width: 100%;
+  flex: auto;
+}
+.read-assess-form textarea
+{
+  background-color: #fff;
+    border-radius: 4px 4px 0 0;
+    resize: none;
+    border: none;
+    color: #666;
+    height: 67px;
+    padding: 10px;
+    width: 100%;
+}
+.submit-assess {
+  background-color: #2f80ed;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  padding: 11px 10px;
+  width: 215px;
+  text-align: center;
+}
+.list-input
+{
+  margin:20px 0;
+}
 @media screen and (max-width: 1023px)
 {
+  .product-comments-ratings
+{
+  /* background-color: #fffbf8;
+    min-height: 5rem;
+    border: 1px solid #f9ede5;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    border-radius: 2px;
+    box-sizing: border-box;
+    padding: 30px;
+    margin: 16px 0; */
+    display: block;
+}
+.timeline-star
+{
+  background-color: #eee;
+  height: 4px;
+  position: relative;
+  min-width: 100px;
+  width: calc(100% - 60px);
+}
   .order-submit .left
   {
     display:flex;
@@ -1467,6 +1780,7 @@ ul.dot{
 }
 @media screen and (max-width: 767px)
 {
+  
   .product-detail-order {
     position:relative;
     display:block;
@@ -1562,12 +1876,12 @@ ul.dot{
   border-radius: 25px;
   border: 2px solid #333;
   padding: 10px;
-  font-size: 20px;
+  font-size: 15px;
   color: #000;
 }
 
 .search-button {
-  width: 25%;
+  width: 50%;
   height: 25%;
   background-color: #333;
   color: #fff;
@@ -1580,6 +1894,7 @@ ul.dot{
 .search-button:hover {
   background-color: red;
 }
+
 @media screen and (max-width: 767px)
 {
   .search-box {
