@@ -11,8 +11,8 @@
     
     <link rel="stylesheet" href="../css/hover-dropdown.css">
     <link rel="stylesheet" href="../css/fontawesome.css" />
-    <link rel="stylesheet" href="../css/app.css" />
-    <!--<link rel="stylesheet" href="../css/app1.css" /> --> 
+        <link rel="stylesheet" href="../css/app.css" />
+    <!-- <link rel="stylesheet" href="../css/app1.css" /> -->
     <title>Shoes</title>
   </head>
   <body>
@@ -31,7 +31,7 @@
           </div>
 
           <!----------------------------- Navigation ------------------------------->
-          <div class="header-middle">
+           <div class="header-middle">
             <ul class="header-nav">
               <!-- <li class="header-nav-item">
                 <a href="index.html" class="header-nav-link">Trang chủ</a>
@@ -78,7 +78,7 @@
               const searchButton = document.getElementById('search-button');
               searchButton.addEventListener('click', function() { 
                 const searchInput = document.getElementById('search-input').value;
-                window.location.href = `../searchresult.html?search=${searchInput}`;
+                window.location.href = `../search.html?search=${searchInput}`;
               });
               </script>
 
@@ -107,18 +107,19 @@
         <div class="banner-top">
           <img src="../images/slider-img.jpg" alt="" class="banner-image" />
           <div class="banner-content">
-            <div class="banner-content-heading">Tất cả sản phẩm</div>
+            <div class="banner-content-heading">Shoes Photo</div>
             <ul class="banner-content-list">
-              <li>
-                <a href="../index.html" class="banner-content-item">Trang chủ</a>
-              </li>
-              <li class="banner-content-item">
-                Tất cả sản phẩm
+                <li>
+                    <a href="../index.html" class="banner-content-item">Home</a>
+                </li>
+              <li class="banner-content-item" >
+                Shoes Photo
               </li>
             </ul>
           </div>
         </div>
       </section>
+
 
       <!----------------------------- Product ------------------------------->
       <section class="product">
@@ -127,225 +128,61 @@
             <div class="product-left">
               <div class="product">
                 <div class="product-group">
-                  <span class="product-title">Sắp xếp</span>
-                  <ul class="product-sort">
-                    <li class="product-sort-item">
-                      <a href="product.html" class="product-sort-link">
-                        <span class="product-sort-check"></span>
-                        Mặc định
-                      </a>
-                    </li>
-    
-                    <li class="product-sort-item">
-                      <a href="az.html" class="product-sort-link">
-                        <span class="product-sort-check"></span>
-                        Tên A-Z
-                      </a>
-                    </li>
-    
-                    <li class="product-sort-item">
-                      <a href="za.html" class="product-sort-link">
-                        <span class="product-sort-check"></span>
-                        Tên Z-A
-                      </a>
-                    </li>
-    
-                    <li class="product-sort-item">
-                      <a href="giathapcao.html" class="product-sort-link">
-                        <span class="product-sort-check"></span>
-                        Giá thấp đến cao
-                      </a>
-                    </li>
-    
-                    <li class="product-sort-item">
-                      <a href="giacaothap.html" class="product-sort-link">
-                        <span class="product-sort-check"></span>
-                        Giá cao xuống thấp
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-    
-                <div class="product-group">
-                  <span class="product-title">Loại</span>
-                  <ul class="product-type">
-                    <li class="product-type-item">
-                      <input
-                        type="checkbox"
-                        name=""
-                        id="product-type-input"
-                        class="product-type-input"
-                      />
-                      
-                      <a for="product-type-input" class="product-type-label" href="bongro.html">Giày bóng rổ</a>
-                      
-                    </li>
-                    
-    
-                    <li class="product-type-item">
-                      <input
-                        type="checkbox"
-                        name=""
-                        id="product-type-input"
-                        class="product-type-input"
-                      />
-                      <a for="product-type-input" class="product-type-label" href="thethao.html">Giày thể thao</a>
-                    </li>
-    
-                    <li class="product-type-item">
-                      <input
-                        type="checkbox"
-                        name=""
-                        id="product-type-input"
-                        class="product-type-input"
-                      />
-                      <a for="product-type-input" class="product-type-label" href="chaybo.html">Giày chạy bộ</a>
-                    </li>
-    
-                    <li class="product-type-item">
-                      <input
-                        type="checkbox"
-                        name=""
-                        id="product-type-input"
-                        class="product-type-input"
-                      />
-                      <a for="product-type-input" class="product-type-label" href="dulich.html">Giày du lịch</a>
-                    </li>
-                  </ul>
-                </div>
-    
+                  <span class="product-title">Filters</span>
+                <ul class="product-sort">
+                  <li class="product-sort-item">
+                    <a href="product.html" class="product-sort-link">
+                      <span class="product-sort-check"></span>
+                      Default
+                    </a>
+                  </li>
 
+                  <li class="product-sort-item">
+                    <a href="lastest_product.html" class="product-sort-link">
+                      <span class="product-sort-check"></span>
+                      Latest product
+                    </a>
+                  </li>
+
+                  <li class="product-sort-item">
+                    <a href="men_shoe.html" class="product-sort-link">
+                      <span class="product-sort-check"></span>
+                      <!-- Tên A-Z -->
+                      Men's shoes
+                    </a>
+                  </li>
+
+                  <li class="product-sort-item">
+                    <a href="women_shoe.html" class="product-sort-link">
+                      <span class="product-sort-check"></span>
+                      <!-- Tên Z-A -->
+                      Women's shoes
+                    </a>
+                  </li>
+
+                  <li class="product-sort-item">
+                    <a href="#" class="product-sort-link">
+                      <span class="product-sort-check"></span>
+                      <!-- Giá thấp đến cao -->
+                      Anime Style
+                    </a>
+                  </li>
+
+                  <li class="product-sort-item">
+                    <a href="fantasy_style.html" class="product-sort-link">
+                      <span class="product-sort-check"></span>
+                      <!-- Giá cao xuống thấp -->
+                      Fantasy Style 
+                    </a>
+                  </li>
+                </ul>
+              </div>
+             
               </div>
             </div>
     
             <div class="product-right">
               <div class="product-category-list">
-                <div class="product-category-item">
-                  <a href="./product/Nike Air Force 1 Low Dusty Red Suede DH0265-600.html" class="product-category-link">
-                    <img
-                      src="../images/number3.png"
-                      alt=""
-                      class="product-category-image"
-                    />
-                  </a>
-                  <div class="product-category-info">
-                    <h3 class="product-category-heading">
-                      <a href="./product/Nike Air Force 1 Low Dusty Red Suede DH0265-600.html" class="product-category-name"
-                        >DH0265-600 Nike Air Force 1 Low Dusty Red Suede</a
-                      >
-                    </h3>
-                    <span class="product-category-price">7.890.000đ</span>
-                  </div>
-                </div>
-    
-                <div class="product-category-item">
-                  <a href="./product/Nike Air Force 1 Mid Sun Club White DM0119-100.html" class="product-category-link">
-                    <img
-                      src="../images/number6.png"
-                      alt=""
-                      class="product-category-image"
-                    />
-                  </a>
-                  <div class="product-category-info">
-                    <h3 class="product-category-heading">
-                      <a href="./product/Nike Air Force 1 Mid Sun Club White DM0119-100.html" class="product-category-name"
-                        >DM0119-100 Nike Air Force 1 Mid Sun Club White</a
-                      >
-                    </h3>
-                    <span class="product-category-price">3.890.000đ</span>
-                  </div>
-                </div>
-    
-                <div class="product-category-item">
-                  <a href="./product/Nike Air Force 1 Low SP Supreme Wheat DN1555-200.html" class="product-category-link">
-                    <img
-                      src="../images/number4.png"
-                      alt=""
-                      class="product-category-image"
-                    />
-                  </a>
-                  <div class="product-category-info">
-                    <h3 class="product-category-heading">
-                      <a href="./product/Nike Air Force 1 Low SP Supreme Wheat DN1555-200.html" class="product-category-name"
-                        >DN1555-200 Nike Air Force 1 Low SP Supreme Wheat</a
-                      >
-                    </h3>
-                    <span class="product-category-price">7.390.000đ</span>
-                  </div>
-                </div>
-    
-                <div class="product-category-item">
-                  <a href="./product/Nike Air Force 1 High Green White DQ7584-300.html" class="product-category-link">
-                    <img
-                      src="../images/number10.png"
-                      alt=""
-                      class="product-category-image"
-                    />
-                  </a>
-                  <div class="product-category-info">
-                    <h3 class="product-category-heading">
-                      <a href="./product/Nike Air Force 1 High Green White DQ7584-300.html" class="product-category-name"
-                        >DQ7584-300 Nike Air Force 1 High Green White</a
-                      >
-                    </h3>
-                    <span class="product-category-price">4.890.000đ</span>
-                  </div>
-                </div>
-    
-                <div class="product-category-item">
-                  <a href="./product/Nike Air Force 1 Low College Pack Midninght Navy DQ7659-101.html" class="product-category-link">
-                    <img
-                      src="../images/number1.png"
-                      alt=""
-                      class="product-category-image"
-                    />
-                  </a>
-                  <div class="product-category-info">
-                    <h3 class="product-category-heading">
-                      <a href="./product/Nike Air Force 1 Low College Pack Midninght Navy DQ7659-101.html" class="product-category-name"
-                        >DQ7659-101 Nike Air Force 1 Low College Pack Midninght Navy</a
-                      >
-                    </h3>
-                    <span class="product-category-price">4.690.000đ</span> 
-                  </div>
-                </div>
-    
-                <div class="product-category-item">
-                  <a href="./product/Nike Air Force 1 Mid React White Black DQ7668-100.html" class="product-category-link">
-                    <img
-                      src="../images/number7.png"
-                      alt=""
-                      class="product-category-image"
-                    />
-                  </a>
-                  <div class="product-category-info">
-                    <h3 class="product-category-heading">
-                      <a href="./product/Nike Air Force 1 Mid React White Black DQ7668-100.html" class="product-category-name"
-                        >DQ7668-100 Nike Air Force 1 Mid React White Black</a
-                      >
-                    </h3>
-                    <span class="product-category-price">5.390.000đ</span>
-                  </div>
-                </div>
-    
-                <div class="product-category-item">
-                  <a href="./product/Nike Air Force 1 Low White University Blue DR9867-101.html" class="product-category-link">
-                    <img
-                      src="../images/number8.png"
-                      alt=""
-                      class="product-category-image"
-                    />
-                  </a>
-                  <div class="product-category-info">
-                    <h3 class="product-category-heading">
-                      <a href="./product/Nike Air Force 1 Low White University Blue DR9867-101.html" class="product-category-name"
-                        >DR9867-101 Nike Air Force 1 Low White University Blue</a
-                      >
-                    </h3>
-                    <span class="product-category-price">4.390.000đ</span>
-                  </div>
-                </div>
-    
                 <div class="product-category-item">
                   <a href="./product/Nike Air Force 1 Low BLack White DV1331-100.html" class="product-category-link">
                     <img
@@ -383,24 +220,6 @@
                 </div>
     
                 <div class="product-category-item">
-                  <a href="./product/Nike Air Force 1 High Patriots DZ7338-001.html" class="product-category-link">
-                    <img
-                      src="../images/number11.png"
-                      alt=""
-                      class="product-category-image"
-                    />
-                  </a>
-                  <div class="product-category-info">
-                    <h3 class="product-category-heading">
-                      <a href="./product/Nike Air Force 1 High Patriots DZ7338-001.html" class="product-category-name"
-                        >DZ7338-001 Nike Air Force 1 High Patriots</a
-                      >
-                    </h3>
-                    <span class="product-category-price">4.890.000đ</span>
-                  </div>
-                </div>
-    
-                <div class="product-category-item">
                   <a href="./product/Nike Air Force 1 Low Just Do It White Neon FB1853-111.html" class="product-category-link">
                     <img
                       src="../images/number5.png"
@@ -417,7 +236,6 @@
                     <span class="product-category-price">3.890.000đ</span>
                   </div>
                 </div>
-    
                 <div class="product-category-item">
                   <a href="./product/Nike Air Force 1 07 Black Laser Orange FB7162-081.html" class="product-category-link">
                     <img
@@ -432,7 +250,150 @@
                         >FB7162-081 Nike Air Force 1 07 Black Laser Orange</a
                       >
                     </h3>
+                    <span class="product-category-price">3.890.000đ</span> 
+                  </div>
+                </div>
+    
+                <div class="product-category-item">
+                  <a href="./product/Nike Air Force 1 Mid Sun Club White DM0119-100.html" class="product-category-link">
+                    <img
+                      src="../images/number6.png"
+                      alt=""
+                      class="product-category-image"
+                    />
+                  </a>
+                  <div class="product-category-info">
+                    <h3 class="product-category-heading">
+                      <a href="./product/Nike Air Force 1 Mid Sun Club White DM0119-100.html" class="product-category-name"
+                        >DM0119-100 Nike Air Force 1 Mid Sun Club White</a
+                      >
+                    </h3>
                     <span class="product-category-price">3.890.000đ</span>
+                  </div>
+                </div>
+    
+                <div class="product-category-item">
+                  <a href="./product/Nike Air Force 1 Low White University Blue DR9867-101.html" class="product-category-link">
+                    <img
+                      src="../images/number8.png"
+                      alt=""
+                      class="product-category-image"
+                    />
+                  </a>
+                  <div class="product-category-info">
+                    <h3 class="product-category-heading">
+                      <a href="./product/Nike Air Force 1 Low White University Blue DR9867-101.html" class="product-category-name"
+                        >DR9867-101 Nike Air Force 1 Low White University Blue</a
+                      >
+                    </h3>
+                    <span class="product-category-price">4.390.000đ</span> 
+                  </div>
+                </div>
+    
+                <div class="product-category-item">
+                  <a href="./product/Nike Air Force 1 Low College Pack Midninght Navy DQ7659-101.html" class="product-category-link">
+                    <img
+                      src="../images/number1.png"
+                      alt=""
+                      class="product-category-image"
+                    />
+                  </a>
+                  <div class="product-category-info">
+                    <h3 class="product-category-heading">
+                      <a href="./product/Nike Air Force 1 Low College Pack Midninght Navy DQ7659-101.html" class="product-category-name"
+                        >DQ7659-101 Nike Air Force 1 Low College Pack Midninght Navy</a
+                      >
+                    </h3>
+                    <span class="product-category-price">4.690.000đ</span>
+                  </div>
+                </div>
+    
+                <div class="product-category-item">
+                  <a href="./product/Nike Air Force 1 High Green White DQ7584-300.html" class="product-category-link">
+                    <img
+                      src="../images/number10.png"
+                      alt=""
+                      class="product-category-image"
+                    />
+                  </a>
+                  <div class="product-category-info">
+                    <h3 class="product-category-heading">
+                      <a href="./product/Nike Air Force 1 High Green White DQ7584-300.html" class="product-category-name"
+                        >DQ7584-300 Nike Air Force 1 High Green White</a
+                      >
+                    </h3>
+                    <span class="product-category-price">4.890.000đ</span>
+                  </div>
+                </div>
+    
+                <div class="product-category-item">
+                  <a href="./product/Nike Air Force 1 High Patriots DZ7338-001.html" class="product-category-link">
+                    <img
+                      src="../images/number11.png"
+                      alt=""
+                      class="product-category-image"
+                    />
+                  </a>
+                  <div class="product-category-info">
+                    <h3 class="product-category-heading">
+                      <a href="./product/Nike Air Force 1 High Patriots DZ7338-001.html" class="product-category-name"
+                        >DZ7338-001 Nike Air Force 1 High Patriots</a
+                      >
+                    </h3>
+                    <span class="product-category-price">4.890.000đ</span>
+                  </div>
+                </div>
+                <div class="product-category-item">
+                  <a href="./product/Nike Air Force 1 Mid React White Black DQ7668-100.html" class="product-category-link">
+                    <img
+                      src="../images/number7.png"
+                      alt=""
+                      class="product-category-image"
+                    />
+                  </a>
+                  <div class="product-category-info">
+                    <h3 class="product-category-heading">
+                      <a href="./product/Nike Air Force 1 Mid React White Black DQ7668-100.html" class="product-category-name"
+                        >DQ7668-100 Nike Air Force 1 Mid React White Black</a
+                      >
+                    </h3>
+                    <span class="product-category-price">5.390.000đ</span>
+                  </div>
+                </div>
+    
+                <div class="product-category-item">
+                  <a href="./product/Nike Air Force 1 Low SP Supreme Wheat DN1555-200.html" class="product-category-link">
+                    <img
+                      src="../images/number4.png"
+                      alt=""
+                      class="product-category-image"
+                    />
+                  </a>
+                  <div class="product-category-info">
+                    <h3 class="product-category-heading">
+                      <a href="./product/Nike Air Force 1 Low SP Supreme Wheat DN1555-200.html" class="product-category-name"
+                        >DN1555-200 Nike Air Force 1 Low SP Supreme Wheat</a
+                      >
+                    </h3>
+                    <span class="product-category-price">7.390.000đ</span>
+                  </div>
+                </div>
+    
+                <div class="product-category-item">
+                  <a href="./product/Nike Air Force 1 Low Dusty Red Suede DH0265-600.html" class="product-category-link">
+                    <img
+                      src="../images/number3.png"
+                      alt=""
+                      class="product-category-image"
+                    />
+                  </a>
+                  <div class="product-category-info">
+                    <h3 class="product-category-heading">
+                      <a href="./product/Nike Air Force 1 Low Dusty Red Suede DH0265-600.html" class="product-category-name"
+                        >DN1555-200 Nike Air Force 1 Low Dusty Red Suede</a
+                      >
+                    </h3>
+                    <span class="product-category-price">7.390.000đ</span>
                   </div>
                 </div>
               </div>

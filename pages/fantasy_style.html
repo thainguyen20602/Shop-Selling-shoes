@@ -78,7 +78,7 @@
               const searchButton = document.getElementById('search-button');
               searchButton.addEventListener('click', function() { 
                 const searchInput = document.getElementById('search-input').value;
-                window.location.href = `../searchresult.html?search=${searchInput}`;
+                window.location.href = `../search.html?search=${searchInput}`;
               });
               </script>
 
@@ -107,18 +107,19 @@
         <div class="banner-top">
           <img src="../images/slider-img.jpg" alt="" class="banner-image" />
           <div class="banner-content">
-            <div class="banner-content-heading">Tất cả sản phẩm</div>
+            <div class="banner-content-heading">Shoes Photo</div>
             <ul class="banner-content-list">
                 <li>
-                    <a href="../index.html" class="banner-content-item">Trang chủ</a>
+                    <a href="../index.html" class="banner-content-item">Home</a>
                 </li>
               <li class="banner-content-item" >
-                Tất cả sản phẩm
+                Shoes Photo
               </li>
             </ul>
           </div>
         </div>
       </section>
+
 
       <!----------------------------- Product ------------------------------->
       <section class="product">
@@ -127,98 +128,58 @@
             <div class="product-left">
               <div class="product">
                 <div class="product-group">
-                  <span class="product-title">Sắp xếp</span>
-                  <ul class="product-sort">
-                    <li class="product-sort-item">
-                      <a href="product.html" class="product-sort-link">
-                        <span class="product-sort-check"></span>
-                        Mặc định
-                      </a>
-                    </li>
-    
-                    <li class="product-sort-item">
-                      <a href="az.html" class="product-sort-link">
-                        <span class="product-sort-check"></span>
-                        Tên A-Z
-                      </a>
-                    </li>
-    
-                    <li class="product-sort-item">
-                      <a href="za.html" class="product-sort-link">
-                        <span class="product-sort-check"></span>
-                        Tên Z-A
-                      </a>
-                    </li>
-    
-                    <li class="product-sort-item">
-                      <a href="giathapcao.html" class="product-sort-link">
-                        <span class="product-sort-check"></span>
-                        Giá thấp đến cao
-                      </a>
-                    </li>
-    
-                    <li class="product-sort-item">
-                      <a href="giacaothap.html" class="product-sort-link">
-                        <span class="product-sort-check"></span>
-                        Giá cao xuống thấp
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-    
-                <div class="product-group">
-                  <span class="product-title">Loại</span>
-                  <ul class="product-type">
-                    <li class="product-type-item">
-                      <input
-                        type="checkbox"
-                        name=""
-                        id="product-type-input"
-                        class="product-type-input"
-                      />
-                      
-                      <a for="product-type-input" class="product-type-label" href="bongro.html">Giày bóng rổ</a>
-                      
-                    </li>
-                    
-    
-                    <li class="product-type-item">
-                      <input
-                        type="checkbox"
-                        name=""
-                        id="product-type-input"
-                        class="product-type-input"
-                      />
-                      <a for="product-type-input" class="product-type-label" href="thethao.html">Giày thể thao</a>
-                    </li>
-    
-                    <li class="product-type-item">
-                      <input
-                        type="checkbox"
-                        name=""
-                        id="product-type-input"
-                        class="product-type-input"
-                      />
-                      <a for="product-type-input" class="product-type-label" href="chaybo.html">Giày chạy bộ</a>
-                    </li>
-    
-                    <li class="product-type-item">
-                      <input
-                        type="checkbox"
-                        name=""
-                        id="product-type-input"
-                        class="product-type-input"
-                      />
-                      <a for="product-type-input" class="product-type-label" href="dulich.html">Giày du lịch</a>
-                    </li>
-                  </ul>
-                </div>
-    
-                
+                  <span class="product-title">Filters</span>
+                <ul class="product-sort">
+                  <li class="product-sort-item">
+                    <a href="product.html" class="product-sort-link">
+                      <span class="product-sort-check"></span>
+                      Default
+                    </a>
+                  </li>
 
+                  <li class="product-sort-item">
+                    <a href="lastest_product.html" class="product-sort-link">
+                      <span class="product-sort-check"></span>
+                      Latest product
+                    </a>
+                  </li>
+
+                  <li class="product-sort-item">
+                    <a href="men_shoe.html" class="product-sort-link">
+                      <span class="product-sort-check"></span>
+                      <!-- Tên A-Z -->
+                      Men's shoes
+                    </a>
+                  </li>
+
+                  <li class="product-sort-item">
+                    <a href="women_shoe.html" class="product-sort-link">
+                      <span class="product-sort-check"></span>
+                      <!-- Tên Z-A -->
+                      Women's shoes
+                    </a>
+                  </li>
+
+                  <li class="product-sort-item">
+                    <a href="anime_style.html" class="product-sort-link">
+                      <span class="product-sort-check"></span>
+                      <!-- Giá thấp đến cao -->
+                      Anime Style
+                    </a>
+                  </li>
+
+                  <li class="product-sort-item">
+                    <a href="#" class="product-sort-link">
+                      <span class="product-sort-check"></span>
+                      <!-- Giá cao xuống thấp -->
+                      Fantasy Style 
+                    </a>
+                  </li>
+                </ul>
+              </div>
+             
               </div>
             </div>
-    
             <div class="product-right">
               <div class="product-category-list">
     
