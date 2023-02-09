@@ -228,31 +228,32 @@
   <script src="./script/snow.js"></script>
   <script>
     const search = new URL(window.location.href).searchParams.get('search');
-    // fetch('http://103.186.100.203:9000/json/test/shoe_discovery.json')
-    fetch('http://103.186.100.217:5000/api/v1/appregator', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        service: 'lexica',
-        prompt: 'shoes',
-        page: 0,
-        number_of_result: 20,
-        nsfw: true})
-    })
+    fetch('http://103.186.100.203:9000/json/test/shoe_discovery.json')
+    // fetch('http://103.186.100.217:5000/api/v1/appregator', {
+    //   method: 'POST',
+    //   headers: {
+    //     'Content-Type': 'application/json'
+    //   },
+    //   body: JSON.stringify({
+    //     service: 'lexica',
+    //     prompt: 'shoes',
+    //     page: 0,
+    //     number_of_result: 20,
+    //     nsfw: true})
+    // })
       .then(response => response.json())
       .then(data => {
         const contentList = document.querySelector(".content-list")
         for (let i = 20; i < 24; i++) {
-          const image = data['results'][i];
+          // const image = data['results'][i];
+          const image = data[i];
           const imageElement = document.createElement('img');
 
           const contentItem = document.createElement("div");
           contentItem.classList.add("content-item");
 
           const contentImage = document.createElement("img");
-          contentImage.src = image.src;
+          contentImage.src = image.url;
           contentImage.alt = "";
           contentImage.classList.add("content-image");
 
