@@ -2,10 +2,14 @@
 
 /* Slideshow container */
 .slideshow-container {
-  width: 500px;
+  width: 200px;
   max-width: 1000px;
   position: relative;
-  margin: auto;
+  /* margin: auto;
+   */
+   margin: 15px auto ;
+    margin-top: 15px;
+    margin-bottom: -5px;
 }
 
 /* Hide the images by default */

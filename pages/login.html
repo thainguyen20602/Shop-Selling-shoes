@@ -1,39 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 
-    
-    <link rel="stylesheet" href="../css/hover-dropdown.css">
-    <link rel="stylesheet" href="../css/fontawesome.css" />
-        <link rel="stylesheet" href="../css/app.css" />
-    <!-- <link rel="stylesheet" href="../css/app1.css" /> -->
-    <title>Shoes</title>
-  </head>
-  <body>
-    <div class="wrapper">
-      <!----------------------------- Header ------------------------------->
-      <section class="header">
-        <div class="container">
-          <!----------------------------- Logo ------------------------------->
-          <div class="header-left">
-            <a href="../index.html" class="header-logo"
-              ><img
-                src="../images/logo_black.jpg"
-                alt=""
-                class="header-logo-nike"
-            /></a>
-          </div>
 
-          <!----------------------------- Navigation ------------------------------->
-          <div class="header-middle">
-            <ul class="header-nav">
-              <!-- <li class="header-nav-item">
+  <link rel="stylesheet" href="../css/hover-dropdown.css">
+  <link rel="stylesheet" href="../css/fontawesome.css" />
+  <link rel="stylesheet" href="../css/app.css" />
+  <!-- <link rel="stylesheet" href="../css/app1.css" /> -->
+  <title>Shoes</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <!----------------------------- Header ------------------------------->
+    <section class="header">
+      <div class="container">
+        <!----------------------------- Logo ------------------------------->
+        <div class="header-left">
+          <a href="../index.html" class="header-logo"><img src="../images/logo_black.jpg" alt=""
+              class="header-logo-nike" /></a>
+        </div>
+
+        <!----------------------------- Navigation ------------------------------->
+        <div class="header-middle">
+          <ul class="header-nav">
+            <!-- <li class="header-nav-item">
                 <a href="index.html" class="header-nav-link">Trang chủ</a>
               </li>
 
@@ -46,173 +44,154 @@
               </li>
 
               <li class="header-nav-item">
-                <a href="./pages/news.html" class="header-nav-link">Tin tức</a>
+                <a href="./pages/discovery.html" class="header-nav-link">Tin tức</a>
               </li> -->
 
-              <li class="header-nav-item">
-                <a href="../index.html" class="header-nav-link">Home</a>
-              </li>
-              <li class="header-nav-item">
-                <a href="./news.html" class="header-nav-link">Discovery</a>
-              </li>
-              <li class="header-nav-item">
-                <a href="./product.html" class="header-nav-link">Art Shoes</a>
-              </li>
-              <li class="header-nav-item">
-                <a href="./introduce.html" class="header-nav-link">About me</a>
-              </li>
+            <li class="header-nav-item">
+              <a href="../index.html" class="header-nav-link">Home</a>
+            </li>
+            <li class="header-nav-item">
+              <a href="./discovery.html" class="header-nav-link">Discovery</a>
+            </li>
+            <li class="header-nav-item">
+              <a href="./product.html" class="header-nav-link">Art Shoes</a>
+            </li>
+            <li class="header-nav-item">
+              <a href="./introduce.html" class="header-nav-link">About me</a>
+            </li>
 
-              
-            </ul>
-          </div>
 
-          <div class="header-right">
-            <ul class="header-group">
+          </ul>
+        </div>
 
-              <div class="search-container">
-                  <input type="text" class="search-box" id="search-input" placeholder="Search">
-                  <button type="submit" class="search-button" id="search-button">Search</button>
-              </div>
+        <div class="header-right">
+          <ul class="header-group">
 
-              <script>
+            <div class="search-container">
+              <input type="text" class="search-box" id="search-input" placeholder="Search">
+              <button type="submit" class="search-button" id="search-button">Search</button>
+            </div>
+
+            <script>
               const searchButton = document.getElementById('search-button');
-              searchButton.addEventListener('click', function() { 
+              searchButton.addEventListener('click', function () {
                 const searchInput = document.getElementById('search-input').value;
                 window.location.href = `../search.html?search=${searchInput}`;
               });
-              </script>
+            </script>
 
-              <i class="fa fa-bars header-toggle dropdown" >   
-                <!-- <div class="dropdown-content">
+            <i class="fa fa-bars header-toggle dropdown">
+              <!-- <div class="dropdown-content">
                   <a href="index.html" >Trang chủ</a>
                   <a href="./pages/introduce.html">Giới thiệu</a>
                   <a href="./pages/product.html" >Sản phẩm</a>
-                  <a href="./pages/news.html" >Tin tức</a>
+                  <a href="./pages/discovery.html" >Tin tức</a>
                 </div> -->
-                <div class="dropdown-content">
-                  <a href="../index.html" >Home</a>
-                  <a href="./news.html" >Discovery</a>
-                  <a href="./product.html" >Art Shoes</a>
-                  <a href="./introduce.html">About me</a>
-                </div>     
-              </i>
-
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!----------------------------- Banner ------------------------------->
-      <section class="banner">
-        <div class="banner-top">
-          <img src="../images/slider-img.jpg" alt="" class="banner-image" />
-          <div class="banner-content">
-            <div class="banner-content-heading">Đăng nhập tài khoản</div>
-            <ul class="banner-content-list">
-              <li>
-                <a href="../index.html" class="banner-content-item">Trang chủ</a>
-              </li>
-              <li class="banner-content-item">
-                Đăng nhập tài khoản
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      
-
-      <!----------------------------- Login ------------------------------->
-      <section class="login">
-        <div class="container">
-          <div class="login-wrapper">
-            <ul class="login-menu-list">
-              <li class="login-menu-item">
-                <a href="#" class="login-menu-link" >Đăng nhập</a>
-              </li>
-              <li class="login-menu-item">
-                <a href="register.html" class="login-menu-link" >Đăng ký</a>
-              </li>
-            </ul>
-
-            <form action="" class="login-form">
-              <div class="login-form-group">
-                <label for="email" class="login-form-label">Email</label>
-                <input
-                  type="email"
-                  class="login-form-input"
-                  id="email"
-                  required
-                  placeholder="Nhập địa chỉ email"
-                />
+              <div class="dropdown-content">
+                <a href="../index.html">Home</a>
+                <a href="./discovery.html">Discovery</a>
+                <a href="./product.html">Art Shoes</a>
+                <a href="./introduce.html">About me</a>
               </div>
-              <div class="login-form-group">
-                <label for="password" class="login-form-label">Mật khẩu</label>
-                <input
-                  type="password"
-                  class="login-form-input"
-                  id="password"
-                  required
-                  placeholder="Nhập mật khẩu"
-                />
-              </div>
-              <a href="#" class="login-form-forget">Quên mật khẩu?</a>
-              <button class="login-form-submit" type="submit">Đăng nhập</button>
-            </form>
-          </div>
+            </i>
+
+          </ul>
         </div>
-      </section>
-      <!----------------------------- Footer ------------------------------->
-      <section class="footer">
-        <div class="container">
-          <div class="footer-content">
-            <div class="footer-column">
-              <a href="../index.html" class="footer-logo"
-                ><img
-                  src="../images/logo_black.jpg"
-                  alt=""
-                  class="footer-logo-nike"
-              /></a>
+      </div>
+    </section>
 
-              <div class="footer-contact">
-                <div class="footer-contact-item">
-                  <i class="fa fa-location"></i>
-                  <span class="footer-contact-title"
-                    >Shoes Maigc, Image Generated by AI
-                  </span>
-                </div>
+    <!----------------------------- Banner ------------------------------->
+    <section class="banner">
+      <div class="banner-top">
+        <img src="../images/slider-img.jpg" alt="" class="banner-image" />
+        <div class="banner-content">
+          <div class="banner-content-heading">Đăng nhập tài khoản</div>
+          <ul class="banner-content-list">
+            <li>
+              <a href="../index.html" class="banner-content-item">Trang chủ</a>
+            </li>
+            <li class="banner-content-item">
+              Đăng nhập tài khoản
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-                <div class="footer-contact-item">
-                  <i class="fa fa-phone"></i>
-                  <span class="footer-contact-title">07385637295</span>
-                </div>
 
-                <div class="footer-contact-item">
-                  <i class="fa fa-headset"></i>
-                  <span class="footer-contact-title">support@shoesmagic.ai </span>
-                </div>
-              </div>
+    <!----------------------------- Login ------------------------------->
+    <section class="login">
+      <div class="container">
+        <div class="login-wrapper">
+          <ul class="login-menu-list">
+            <li class="login-menu-item">
+              <a href="#" class="login-menu-link">Đăng nhập</a>
+            </li>
+            <li class="login-menu-item">
+              <a href="register.html" class="login-menu-link">Đăng ký</a>
+            </li>
+          </ul>
 
-              
+          <form action="" class="login-form">
+            <div class="login-form-group">
+              <label for="email" class="login-form-label">Email</label>
+              <input type="email" class="login-form-input" id="email" required placeholder="Nhập địa chỉ email" />
             </div>
-            <div class="footer-column">
-              <h3 class="footer-heading">Shoes Magic</h3>
-              <a href="../index.html" class="footer-nav-link">Home</a>
-              <a href="news.html" class="footer-nav-link">Discovery</a>              
-              <a href="product.html" class="footer-nav-link">Art Shoes</a>
-              <a href="introduce.html" class="footer-nav-link">About me</a>
+            <div class="login-form-group">
+              <label for="password" class="login-form-label">Mật khẩu</label>
+              <input type="password" class="login-form-input" id="password" required placeholder="Nhập mật khẩu" />
             </div>
-            <div class="footer-column">
-              <h3 class="footer-heading">Follow me</h3>
-              <div class="footer-social-list">
-                <a href="https://www.facebook.com/lynguyenminh2k2" class="footer-social-icon"
-                  ><i class="fab fa-facebook"></i></a
-                ><a href="https://www.facebook.com/lynguyenminh2k2" class="footer-social-icon"
-                  ><i class="fab fa-instagram"></i></a
-                ><a href="https://www.facebook.com/lynguyenminh2k2" class="footer-social-icon"
-                  ><i class="fab fa-youtube"></i
-                ></a>
+            <a href="#" class="login-form-forget">Quên mật khẩu?</a>
+            <button class="login-form-submit" type="submit">Đăng nhập</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!----------------------------- Footer ------------------------------->
+    <section class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <a href="../index.html" class="footer-logo"><img src="../images/logo_black.jpg" alt=""
+                class="footer-logo-nike" /></a>
+
+            <div class="footer-contact">
+              <div class="footer-contact-item">
+                <i class="fa fa-location"></i>
+                <span class="footer-contact-title">Shoes Maigc, Image Generated by AI
+                </span>
               </div>
-              <!-- <h3 class="footer-heading">Đăng ký để nhận tin</h3>
+
+              <div class="footer-contact-item">
+                <i class="fa fa-phone"></i>
+                <span class="footer-contact-title">07385637295</span>
+              </div>
+
+              <div class="footer-contact-item">
+                <i class="fa fa-headset"></i>
+                <span class="footer-contact-title">support@shoesmagic.ai </span>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="footer-column">
+            <h3 class="footer-heading">Shoes Magic</h3>
+            <a href="../index.html" class="footer-nav-link">Home</a>
+            <a href="discovery.html" class="footer-nav-link">Discovery</a>
+            <a href="product.html" class="footer-nav-link">Art Shoes</a>
+            <a href="introduce.html" class="footer-nav-link">About me</a>
+          </div>
+          <div class="footer-column">
+            <h3 class="footer-heading">Follow me</h3>
+            <div class="footer-social-list">
+              <a href="https://www.facebook.com/lynguyenminh2k2" class="footer-social-icon"><i
+                  class="fab fa-facebook"></i></a><a href="https://www.facebook.com/lynguyenminh2k2"
+                class="footer-social-icon"><i class="fab fa-instagram"></i></a><a
+                href="https://www.facebook.com/lynguyenminh2k2" class="footer-social-icon"><i
+                  class="fab fa-youtube"></i></a>
+            </div>
+            <!-- <h3 class="footer-heading">Đăng ký để nhận tin</h3>
               <form action="" class="footer-form">
                 <input
                   type="email"
@@ -221,13 +200,14 @@
                   id=""
                   class="footer-form-input"
                 /> -->
-                <!-- <button type="submit" class="footer-form-button">Gửi</button> -->
-              <!-- </form> -->
-            </div>
+            <!-- <button type="submit" class="footer-form-button">Gửi</button> -->
+            <!-- </form> -->
           </div>
         </div>
-      </section>
-    </div>
-    <script src="../script/loadpage.js"></script>
-  </body>
+      </div>
+    </section>
+  </div>
+  <script src="../script/loadpage.js"></script>
+</body>
+
 </html>

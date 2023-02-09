@@ -1,39 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 
-    
-    <link rel="stylesheet" href="../css/hover-dropdown.css">
-    <link rel="stylesheet" href="../css/fontawesome.css" />
-        <link rel="stylesheet" href="../css/app.css" />
-    <!-- <link rel="stylesheet" href="../css/app1.css" /> -->
-    <title>Shoes</title>
-  </head>
-  <body>
-    <div class="wrapper">
-      <!----------------------------- Header ------------------------------->
-      <section class="header">
-        <div class="container">
-          <!----------------------------- Logo ------------------------------->
-          <div class="header-left">
-            <a href="../index.html" class="header-logo"
-              ><img
-                src="../images/logo_black.jpg"
-                alt=""
-                class="header-logo-nike"
-            /></a>
-          </div>
 
-          <!----------------------------- Navigation ------------------------------->
-          <div class="header-middle">
-            <ul class="header-nav">
-              <!-- <li class="header-nav-item">
+  <link rel="stylesheet" href="../css/hover-dropdown.css">
+  <link rel="stylesheet" href="../css/fontawesome.css" />
+  <link rel="stylesheet" href="../css/app.css" />
+  <!-- <link rel="stylesheet" href="../css/app1.css" /> -->
+  <title>Shoes</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <!----------------------------- Header ------------------------------->
+    <section class="header">
+      <div class="container">
+        <!----------------------------- Logo ------------------------------->
+        <div class="header-left">
+          <a href="../index.html" class="header-logo"><img src="../images/logo_black.jpg" alt=""
+              class="header-logo-nike" /></a>
+        </div>
+
+        <!----------------------------- Navigation ------------------------------->
+        <div class="header-middle">
+          <ul class="header-nav">
+            <!-- <li class="header-nav-item">
                 <a href="index.html" class="header-nav-link">Trang chủ</a>
               </li>
 
@@ -46,150 +44,153 @@
               </li>
 
               <li class="header-nav-item">
-                <a href="./pages/news.html" class="header-nav-link">Tin tức</a>
+                <a href="./pages/discovery.html" class="header-nav-link">Tin tức</a>
               </li> -->
 
-              <li class="header-nav-item">
-                <a href="../index.html" class="header-nav-link">Home</a>
-              </li>
-              <li class="header-nav-item">
-                <a href="./news.html" class="header-nav-link">Discovery</a>
-              </li>
-              <li class="header-nav-item">
-                <a href="./product.html" class="header-nav-link">Art Shoes</a>
-              </li>
-              <li class="header-nav-item">
-                <a href="./introduce.html" class="header-nav-link">About me</a>
-              </li>
+            <li class="header-nav-item">
+              <a href="../index.html" class="header-nav-link">Home</a>
+            </li>
+            <li class="header-nav-item">
+              <a href="./discovery.html" class="header-nav-link">Discovery</a>
+            </li>
+            <li class="header-nav-item">
+              <a href="./product.html" class="header-nav-link">Art Shoes</a>
+            </li>
+            <li class="header-nav-item">
+              <a href="./introduce.html" class="header-nav-link">About me</a>
+            </li>
 
-              
-            </ul>
-          </div>
 
-          <div class="header-right">
-            <ul class="header-group">
+          </ul>
+        </div>
 
-              <div class="search-container">
-                  <input type="text" class="search-box" id="search-input" placeholder="Search">
-                  <button type="submit" class="search-button" id="search-button">Search</button>
-              </div>
+        <div class="header-right">
+          <ul class="header-group">
 
-              <script>
+            <div class="search-container">
+              <input type="text" class="search-box" id="search-input" placeholder="Search">
+              <button type="submit" class="search-button" id="search-button">Search</button>
+            </div>
+
+            <script>
               const searchButton = document.getElementById('search-button');
-              searchButton.addEventListener('click', function() { 
+              searchButton.addEventListener('click', function () {
                 const searchInput = document.getElementById('search-input').value;
                 window.location.href = `../search.html?search=${searchInput}`;
               });
-              </script>
+            </script>
 
-              <i class="fa fa-bars header-toggle dropdown" >   
-                <!-- <div class="dropdown-content">
+            <i class="fa fa-bars header-toggle dropdown">
+              <!-- <div class="dropdown-content">
                   <a href="index.html" >Trang chủ</a>
                   <a href="./pages/introduce.html">Giới thiệu</a>
                   <a href="./pages/product.html" >Sản phẩm</a>
-                  <a href="./pages/news.html" >Tin tức</a>
+                  <a href="./pages/discovery.html" >Tin tức</a>
                 </div> -->
-                <div class="dropdown-content">
-                  <a href="../index.html" >Home</a>
-                  <a href="./news.html" >Discovery</a>
-                  <a href="./product.html" >Art Shoes</a>
-                  <a href="./introduce.html">About me</a>
-                </div>     
-              </i>
+              <div class="dropdown-content">
+                <a href="../index.html">Home</a>
+                <a href="./discovery.html">Discovery</a>
+                <a href="./product.html">Art Shoes</a>
+                <a href="./introduce.html">About me</a>
+              </div>
+            </i>
 
-            </ul>
-          </div>
+          </ul>
         </div>
-      </section>
-      <!----------------------------- Banner ------------------------------->
-      <section class="banner">
-        <div class="banner-top">
-          <img src="../images/slider-img.jpg" alt="" class="banner-image" />
-          <div class="banner-content">
-            <div class="banner-content-heading">About me</div>
-            <ul class="banner-content-list">
-              <li>
-                <a href="../index.html" class="banner-content-item">Home</a>
-              </li>
-              <li class="banner-content-item">
-                About me
-              </li>
-            </ul>
-          </div>
+      </div>
+    </section>
+    <!----------------------------- Banner ------------------------------->
+    <section class="banner">
+      <div class="banner-top">
+        <img src="../images/slider-img.jpg" alt="" class="banner-image" />
+        <div class="banner-content">
+          <div class="banner-content-heading">About me</div>
+          <ul class="banner-content-list">
+            <li>
+              <a href="../index.html" class="banner-content-item">Home</a>
+            </li>
+            <li class="banner-content-item">
+              About me
+            </li>
+          </ul>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!----------------------------- introduce ------------------------------->
-      <section class="introduce">
-        <div class="container">
-          <p class="introduce-bottom">
-            Welcome to our web production about creating shoes with AI!
-          </p>
-          <p class="introduce-bottom">We believe that the future of footwear design lies in the integration of artificial intelligence and traditional craftsmanship. With our cutting-edge technology, we are revolutionizing the way shoes are designed, manufactured and sold.
-          </p>
-          <p class="introduce-bottom">Our AI-powered platform allows customers to customize their shoes with precision, from the shape of the toe to the height of the heel. We use machine learning algorithms to analyze data from millions of feet and make recommendations for the perfect fit. Our 3D printing technology then allows us to produce the shoes with unparalleled speed and accuracy.
-          </p>
-          <p class="introduce-bottom">At the same time, we are dedicated to preserving the art of shoemaking. Our team of experienced craftspeople brings a deep understanding of traditional techniques to the production process, ensuring that every pair of shoes we create is not only comfortable but also stylish.
-          </p>
-          <p class="introduce-bottom">We are passionate about creating shoes that are not only functional but also environmentally friendly. Our materials are carefully selected to minimize waste and reduce our carbon footprint.
-          </p>
-          <p class="introduce-bottom">Thank you for visiting our website and learning more about our unique approach to shoe production. We can't wait to see what you create with AI!
-          </p>             
-        </div>
-      </section>
+    <!----------------------------- introduce ------------------------------->
+    <section class="introduce">
+      <div class="container">
+        <p class="introduce-bottom">
+          Welcome to our web production about creating shoes with AI!
+        </p>
+        <p class="introduce-bottom">We believe that the future of footwear design lies in the integration of artificial
+          intelligence and traditional craftsmanship. With our cutting-edge technology, we are revolutionizing the way
+          shoes are designed, manufactured and sold.
+        </p>
+        <p class="introduce-bottom">Our AI-powered platform allows customers to customize their shoes with precision,
+          from the shape of the toe to the height of the heel. We use machine learning algorithms to analyze data from
+          millions of feet and make recommendations for the perfect fit. Our 3D printing technology then allows us to
+          produce the shoes with unparalleled speed and accuracy.
+        </p>
+        <p class="introduce-bottom">At the same time, we are dedicated to preserving the art of shoemaking. Our team of
+          experienced craftspeople brings a deep understanding of traditional techniques to the production process,
+          ensuring that every pair of shoes we create is not only comfortable but also stylish.
+        </p>
+        <p class="introduce-bottom">We are passionate about creating shoes that are not only functional but also
+          environmentally friendly. Our materials are carefully selected to minimize waste and reduce our carbon
+          footprint.
+        </p>
+        <p class="introduce-bottom">Thank you for visiting our website and learning more about our unique approach to
+          shoe production. We can't wait to see what you create with AI!
+        </p>
+      </div>
+    </section>
 
-      <!----------------------------- Footer ------------------------------->
-      <section class="footer">
-        <div class="container">
-          <div class="footer-content">
-            <div class="footer-column">
-              <a href="../index.html" class="footer-logo"
-                ><img
-                  src="../images/logo_black.jpg"
-                  alt=""
-                  class="footer-logo-nike"
-              /></a>
+    <!----------------------------- Footer ------------------------------->
+    <section class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <a href="../index.html" class="footer-logo"><img src="../images/logo_black.jpg" alt=""
+                class="footer-logo-nike" /></a>
 
-              <div class="footer-contact">
-                <div class="footer-contact-item">
-                  <i class="fa fa-location"></i>
-                  <span class="footer-contact-title"
-                    >Shoes Maigc, Image Generated by AI
-                  </span>
-                </div>
-
-                <div class="footer-contact-item">
-                  <i class="fa fa-phone"></i>
-                  <span class="footer-contact-title">07385637295</span>
-                </div>
-
-                <div class="footer-contact-item">
-                  <i class="fa fa-headset"></i>
-                  <span class="footer-contact-title">support@shoesmagic.ai </span>
-                </div>
+            <div class="footer-contact">
+              <div class="footer-contact-item">
+                <i class="fa fa-location"></i>
+                <span class="footer-contact-title">Shoes Maigc, Image Generated by AI
+                </span>
               </div>
 
-              
-            </div>
-            <div class="footer-column">
-              <h3 class="footer-heading">Shoes Magic</h3>
-              <a href="../index.html" class="footer-nav-link">Home</a>
-              <a href="news.html" class="footer-nav-link">Discovery</a>              
-              <a href="product.html" class="footer-nav-link">Art Shoes</a>
-              <a href="introduce.html" class="footer-nav-link">About me</a>
-            </div>
-            <div class="footer-column">
-              <h3 class="footer-heading">Follow me</h3>
-              <div class="footer-social-list">
-                <a href="https://www.facebook.com/lynguyenminh2k2" class="footer-social-icon"
-                  ><i class="fab fa-facebook"></i></a
-                ><a href="https://www.facebook.com/lynguyenminh2k2" class="footer-social-icon"
-                  ><i class="fab fa-instagram"></i></a
-                ><a href="https://www.facebook.com/lynguyenminh2k2" class="footer-social-icon"
-                  ><i class="fab fa-youtube"></i
-                ></a>
+              <div class="footer-contact-item">
+                <i class="fa fa-phone"></i>
+                <span class="footer-contact-title">07385637295</span>
               </div>
-              <!-- <h3 class="footer-heading">Đăng ký để nhận tin</h3>
+
+              <div class="footer-contact-item">
+                <i class="fa fa-headset"></i>
+                <span class="footer-contact-title">support@shoesmagic.ai </span>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="footer-column">
+            <h3 class="footer-heading">Shoes Magic</h3>
+            <a href="../index.html" class="footer-nav-link">Home</a>
+            <a href="discovery.html" class="footer-nav-link">Discovery</a>
+            <a href="product.html" class="footer-nav-link">Art Shoes</a>
+            <a href="introduce.html" class="footer-nav-link">About me</a>
+          </div>
+          <div class="footer-column">
+            <h3 class="footer-heading">Follow me</h3>
+            <div class="footer-social-list">
+              <a href="https://www.facebook.com/lynguyenminh2k2" class="footer-social-icon"><i
+                  class="fab fa-facebook"></i></a><a href="https://www.facebook.com/lynguyenminh2k2"
+                class="footer-social-icon"><i class="fab fa-instagram"></i></a><a
+                href="https://www.facebook.com/lynguyenminh2k2" class="footer-social-icon"><i
+                  class="fab fa-youtube"></i></a>
+            </div>
+            <!-- <h3 class="footer-heading">Đăng ký để nhận tin</h3>
               <form action="" class="footer-form">
                 <input
                   type="email"
@@ -198,13 +199,14 @@
                   id=""
                   class="footer-form-input"
                 /> -->
-                <!-- <button type="submit" class="footer-form-button">Gửi</button> -->
-              <!-- </form> -->
-            </div>
+            <!-- <button type="submit" class="footer-form-button">Gửi</button> -->
+            <!-- </form> -->
           </div>
         </div>
-      </section>
-    </div>
-    <script src="../script/loadpage.js"></script>
-  </body>
+      </div>
+    </section>
+  </div>
+  <script src="../script/loadpage.js"></script>
+</body>
+
 </html>
