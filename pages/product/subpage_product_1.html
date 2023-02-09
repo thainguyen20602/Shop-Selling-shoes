@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="../../css/contentslider.css">
+    <link rel="stylesheet" href="../../css/hover-dropdown.css">
+    <link rel="stylesheet" href="../../css/fontawesome.css" />
+    <link rel="stylesheet" href="../../css/app.css" />
+    <!-- <link rel="stylesheet" href="../../css/app1.css" /> -->
+
+    <script type="text/javascript" src="../../script/contentslider.js"></script>
+    <title>Shoes</title>
+  </head>
+  <body>
+    <div class="wrapper" >
+      <!----------------------------- Header ------------------------------->
+      <section class="header">
+        <div class="container">
+          <!----------------------------- Logo ------------------------------->
+          <div class="header-left">
+            <a href="../../index.html" class="header-logo"
+              ><img
+                src="../../images/logo_black.jpg"
+                alt=""
+                class="header-logo-nike"
+            /></a>
+          </div>
+
+          <!----------------------------- Navigation ------------------------------->
+          <div class="header-middle">
+            <ul class="header-nav">
+
+              <li class="header-nav-item">
+                <a href="../../index.html" class="header-nav-link">Home</a>
+              </li>
+              <li class="header-nav-item">
+                <a href="../discovery.html" class="header-nav-link">Discovery</a>
+              </li>
+              <li class="header-nav-item">
+                <a href="../product.html" class="header-nav-link">Art Shoes</a>
+              </li>
+              <li class="header-nav-item">
+                <a href="../introduce.html" class="header-nav-link">About me</a>
+              </li>
+
+              
+            </ul>
+          </div>
+
+          <div class="header-right">
+            <ul class="header-group">
+
+              <div class="search-container">
+                  <input type="text" class="search-box" id="search-input" placeholder="Search">
+                  <button type="submit" class="search-button" id="search-button">Search</button>
+              </div>
+
+              <script>
+              const searchButton = document.getElementById('search-button');
+              searchButton.addEventListener('click', function() { 
+                const searchInput = document.getElementById('search-input').value;
+                window.location.href = `../../search.html?search=${searchInput}`;
+              });
+              </script>
+
+              <i class="fa fa-bars header-toggle dropdown" >   
+
+                <div class="dropdown-content">
+                  <a href="../../index.html" >Home</a>
+                  <a href="../discovery.html" >Discovery</a>
+                  <a href="../product.html" >Art Shoes</a>
+                  <a href="../introduce.html">About me</a>
+                </div>     
+              </i>
+
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!----------------------------- Banner ------------------------------->
+
+      <section class="banner-detail">
+        <div class="banner-detail-content">
+            <ul class="banner-detail-list">
+                <li><a href="../../index.html">Shoes</a></li>
+                <li>&nbsp; > &nbsp;</li>
+                <li><a href="../product.html">Products</a></li>
+                <li>&nbsp; > &nbsp;</li>
+                <li>Art shoe created by AI</li>
+            </ul>
+        </div>
+      </section>
+      <div class="locationbox__overlay" id ="locationbox__overlay"></div>
+      <!----------------------------- Product ------------------------------->
+      <section class="product-detail">
+          <div class="product-detail-order">
+                  <div class="order-left">
+                    <div id="slider1" class="sliderwrapper">
+                      <div class="contentdiv">
+                        <img src="../../images/shoes/shoe_01.jpg" alt="">
+                      </div>
+                    </div>
+                    <div id="paginate-slider1" class="pagination">
+                    </div>
+                    <script type="text/javascript">
+
+                      featuredcontentslider.init({
+                          id: "slider1",  //id of main slider DIV
+                          contentsource: ["inline", ""],  //Valid values: ["inline", ""] or ["ajax", "path_to_file"]
+                          toc: "markup",  //Valid values: "#increment", "markup", ["label1", "label2", etc]
+                          nextprev: ["Previous", "Next"],  //labels for "prev" and "next" links. Set to "" to hide.
+                          revealtype: "click", //Behavior of pagination links to reveal the slides: "click" or "mouseover"
+                          enablefade: [true, 0.2],  //[true/false, fadedegree]
+                          autorotate: [true, 3000],  //[true/false, pausetime]
+                          onChange: function (previndex, curindex, contentdivs) {  //event handler fired whenever script changes slide
+                              //previndex holds index of last slide viewed b4 current (0=1st slide, 1=2nd etc)
+                              //curindex holds index of currently shown slide (0=1st slide, 1=2nd etc)
+                          }
+                      })
+                    </script>
+                  </div>
+                  <div class="order-right">
+                    <div class="order-detail">
+                      <label class="title-form" for="form" >Art shoes created by</label>
+                      <!-- <div class="product-end-price">
+                        3.890.000đ
+                      </div> -->
+                      <form action="" id="form" onsubmit="return checkvalue()">
+                            <div class="form-order" style="padding-top: 20px;">
+                                <label class="form-order-left" for="movement">Prompt</label>
+                                <label class="form-order-right" for="">a shoe product, 4k, photoshop design, real scene, digital design, dynamic colors</label>
+                                <!-- <input type="text" id="movement"class="form-order-right" value="Prompt in here"> -->
+                            </div>
+                            <div class="form-order" style="padding-top: 20px;">
+                              <label class="form-order-left" for="movement">Created by</label>
+                              <label class="form-order-right" for="">user 001212</label>
+
+                              <!-- <input type="text" id="movement"class="form-order-right"> -->
+                          </div>
+                          <div class="form-order" style="padding-top: 20px;">
+                            <label class="form-order-left" for="movement">Price</label>
+                            <label class="form-order-right" for="">$100</label>
+
+                            <!-- <input type="text" id="movement"class="form-order-right"> -->
+                        </div>                          
+                          </div>
+                            <div class="order-submit form-order">
+                              <div class="left">
+                                <input type="button" class="order-submit-button order-submit-button-left" value="Register to buy">
+                              </div>
+
+                              <div class="right">
+                                <!-- <input type="submit" class="order-submit-button order-submit-button-right" value="Remix"> -->
+                                <!-- <label href="search.html?search=search-text" type="submit" class="order-submit-button order-submit-button-right" value="Remix">Remix</label> -->
+                                <div>
+                                  <a href="../../search.html?search=a shoe product, 4k, photoshop design, real scene, digital design, dynamic colors">
+                                <label type="submit" class="order-submit-button order-submit-button-right" value="Remix">Remix</label>
+                                    
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                      </form>
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="product-details">
+            <h3 class="product-details-header">
+              Product Description
+            </h3>
+            <div class="product-details-item">
+              <ul class="dot">
+                <li>Description</li> 
+                <li>Description</li> 
+                <li>Description</li> 
+                <li>Description</li> 
+
+              </ul>
+            </div>
+          </div>
+          <div class="product-comments">
+            <h3 class="product-details-header">
+              Product Review and Feedback
+            </h3>
+            <div class="product-comments-ratings">
+              <div class = "product-comments-ratings-left">
+                <div>
+                  <span class = "score" id="rating-number" >5</span>
+                  <span> / 5</span>
+                </div>
+                <div class="rating-star" id="rating">
+                  <div class="star">
+                    <span class="star__point">
+                      <i class="fas fa-star"></i>
+                    </span>
+                    <span class="star__point">
+                      <i class="fas fa-star"></i>
+                    </span>
+                    <span class="star__point">
+                      <i class="fas fa-star"></i>
+                    </span>
+                    <span class="star__point">
+                      <i class="fas fa-star"></i>
+                    </span>
+                    <span class="star__point">
+                      <i class="fas fa-star"></i> 
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class = "product-comments-ratings-right"> 
+                <ul class="raiting-list">
+                    <li>
+                      <div class="number-star">
+                        5
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <div class="timeline-star">
+                        <p class="timing" ></p>
+                      </div>
+                      <div class = "number-percent">50%</div>
+                    </li>
+                    <li>
+                      <div class="number-star">
+                        4 
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <div class="timeline-star">
+                        <p class="timing" ></p>
+                      </div>
+                      <div class = "number-percent">50%</div>
+                    </li>
+                    <li>
+                      <div class="number-star">
+                        3
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <div class="timeline-star">
+                        <p class="timing" ></p>
+                      </div>
+                      <div class = "number-percent">50%</div>
+                    </li>
+                    <li>
+                      <div class="number-star">
+                        2
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <div class="timeline-star">
+                        <p class="timing" ></p>
+                      </div>
+                      <div class = "number-percent">50%</div>
+                    </li>
+                    <li>
+                      <div class="number-star">
+                        1
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <div class="timeline-star">
+                        <p class="timing" ></p>
+                      </div>
+                      <div class = "number-percent">50%</div>
+                    </li>
+                </ul>
+              </div>
+            </div>
+            <div class = "comment--all comment" id = "all-comment">
+              <div class="comment__item">
+                <div class="item-top">
+                  <p class="txtname">
+                    User 00001
+                  </p>
+                  <!-- <p class="tickbuy">
+                    <i class="fas fa-check-circle"></i>
+                    Đã mua hàng
+                  </p> -->
+                </div>
+                <div class="item-rate">
+                  <div class="comment-star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+                <div class="comment-content">
+                  <p class="cmt-txt">
+                    Good product!
+                  </p>
+                </div>
+              </div>
+              <div class="comment__item">
+                <div class="item-top">
+                  <p class="txtname">
+                    User 001201
+                  </p>
+                  <!-- <p class="tickbuy">
+                    <i class="fas fa-check-circle"></i>
+                    Đã mua hàng
+                  </p> -->
+                </div>
+                <div class="item-rate">
+                  <div class="comment-star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+                <div class="comment-content">
+                  <p class="cmt-txt">
+                    Comment in here 
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class = "comment-btn">
+              <div class="comment-btn-add" onclick="showform()">
+                 <p>
+                  <i class="fas fa-comment-plus"></i>
+                  Comments
+                 </p> 
+              </div>
+            </div>
+            <div class="read-assets hide" id = "read-assets">
+              <div class="read-assets-top">
+                <p class="read-assets-title">
+                  Review
+                </p>
+                <div class="read-assets-close btn-close-menu" id = "btn-close-menu" onclick="hideshow()">Exit
+                </div>
+              </div>
+              <div class="read-assets-main">
+                <div class="box-cmt-popup">
+                  <div class="infor" id="infor">
+                  </div>
+                  <div class="select-star">
+                    <ul class = "ul-star">
+                      <li onclick="select_start(1)">
+                        <i class="far fa-star"></i>
+                        <p></p>
+                      </li>
+                      <li onclick="select_start(2)">
+                        <i class="far fa-star"></i>
+                        <p></p>
+                      </li>
+                      <li onclick="select_start(3)">
+                        <i class="far fa-star"></i>
+                        <p></p>
+                      </li>
+                      <li onclick="select_start(4)">
+                        <i class="far fa-star"></i>
+                        <p></p>
+                      </li>
+                      <li onclick="select_start(5)">
+                        <i class="far fa-star"></i>
+                        <p></p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class = "read-assess-form">
+                    <div class="textarea">
+                      <div class="inputrating__group">
+                        <textarea name="" id="inputrating-comment" placeholder="Mời bạn chia sẻ một số cảm nhận về sản phẩm ..."></textarea>
+                      </div>
+                    </div>
+                    <!-- <div class="list-input">
+                      <input type="text" class="input-assess" id="input-assess" placeholder="Họ và tên (bắc buộc)">
+                    </div> -->
+                    <div class="submit-assess" onclick="addcomment()">
+                      Submit 
+                    </div>
+                  </div>
+                  <script>
+                    let number_score = 0
+                    function addcomment()
+                    {
+                      // --------------------------------console.log(number_score)
+                      // let element_name = document.getElementById("input-assess")
+                      // let element_name = 'AI shoes'
+
+                      let all_comments = document.getElementById("all-comment")
+                      let name = 'user 00' + Math.floor(Math.random() * 10) + 1;
+                      // random user id 
+                      // if (name == "")
+                      // {
+                      //   element_name.focus()
+                      //   alert("Please enter user id !")
+                      // }
+                      if (1==2) {}
+                      else{
+                        let comment = document.getElementById("inputrating-comment").value
+                        let element_comment = document.createElement("div")
+                        let element_top = document.createElement("div")
+                        let element_rate = document.createElement("div")
+                        let element_content = document.createElement("div")
+
+                        element_top.className = "item-top"
+                        element_comment.className = "comment__item"
+                        element_rate.className = "item-rate"
+                        element_content.className = "comment-content"
+
+                        //element_top
+                        let top_p_1 = document.createElement("p")
+                        let top_p_2 = document.createElement("p")
+                        top_p_1.className = "txtname"
+                        top_p_1.textContent = name
+                        top_p_2.className = "tickbuy"
+                        let element_i = document.createElement("i")
+                        element_i.className = "fas fa-check-circle"
+                        // top_p_2.innerHTML = "<i class='fas fa-check-circle'></i>" + " Đã mua hàng "
+                        element_top.appendChild(top_p_1)
+                        element_top.appendChild(top_p_2)
+                        // console.log(element_top)
+                        
+                        //-----------element rate------------------
+                        // let list_rate = []
+                        let element_comment_star = document.createElement("div")
+                        element_comment_star.className = "comment-star"
+                        for(let i = 0;i<5;i++) {
+                          element_i = document.createElement("i")
+                          if (i<number_score)
+                          {
+                            element_i.className = "fas fa-star"
+                          }
+                          else
+                          {
+                            element_i.className = "far fa-star"
+                          }
+                          element_comment_star.appendChild(element_i)
+                        }
+                        element_rate.appendChild(element_comment_star)
+                        //------------------element-content------------------
+                        let content_p = document.createElement("p")
+                        content_p.className = "cmt-txt"
+                        content_p.textContent = comment
+                        element_content.appendChild(content_p)
+                        //
+                        element_comment.appendChild(element_top)
+                        element_comment.appendChild(element_rate)
+                        element_comment.appendChild(element_content)
+                        all_comments.appendChild(element_comment)
+                        }
+                        update()
+                        hideshow()
+                      }
+                      // console.log(name.value).value
+                    
+                    function select_start(number)
+                    {
+                      number_score = number
+                      let selected_start = document.getElementsByClassName("ul-star")[0]
+                      let childElement = selected_start.children
+                      for (let i = 0; i < 5; i++)
+                      {
+                        childElement[i].children[0].className = "far fa-star"
+                        childElement[i].children[1].className = ""
+                      }
+                      for (let i = 0; i < number; i++)
+                      {
+                        childElement[i].children[0].className = "fas fa-star"
+                      }
+                      childElement[number-1].children[1].className = "active"
+                      let show_fomr = document.getElementsByClassName("read-assess-form")[0]
+                      show_fomr.style.display = "block"
+                    }
+                  </script>
+                </div>
+              </div>
+            </div>
+            <script>
+              function showform()
+              {
+                let show = document.getElementById("read-assets")
+                // console.log(show)
+                show.className = show.className.replace(" hide"," show")
+                let showR = document.getElementById("locationbox__overlay")
+                showR.style.display = "block"
+                let title_product = document.getElementsByClassName("banner-detail-list")[0].lastElementChild.textContent
+                let infor = document.getElementById("infor")
+                // console.log(title_product)
+                infor.textContent = title_product
+              }
+              function hideshow()
+              {
+                let show = document.getElementById("read-assets")
+                // console.log(show)
+                show.className = show.className.replace(" show"," hide")
+                let showR = document.getElementById("locationbox__overlay")
+                showR.style.display = "none"
+                
+              }
+            </script>
+            
+          </div>
+      </section>
+      <!----------------------------- Footer ------------------------------->
+      <section class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-column">
+              <a href="../../index.html" class="footer-logo"
+                ><img
+                  src="../../images/logo_black.jpg"
+                  alt=""
+                  class="footer-logo-nike"
+              /></a>
+
+              <div class="footer-contact">
+                <div class="footer-contact-item">
+                  <i class="fa fa-location"></i>
+                  <span class="footer-contact-title"
+                    >Shoes Maigc, Image Generated by AI
+                  </span>
+                </div>
+
+                <div class="footer-contact-item">
+                  <i class="fa fa-phone"></i>
+                  <span class="footer-contact-title">07385637295</span>
+                </div>
+
+                <div class="footer-contact-item">
+                  <i class="fa fa-headset"></i>
+                  <span class="footer-contact-title">support@shoesmagic.ai </span>
+                </div>
+              </div>
+
+              
+            </div>
+            <div class="footer-column">
+              <h3 class="footer-heading">Shoes Magic</h3>
+              <a href="../../index.html" class="footer-nav-link">Home</a>
+              <a href="../discovery.html" class="footer-nav-link">Discovery</a>              
+              <a href="../product.html" class="footer-nav-link">Art Shoes</a>
+              <a href="../introduce.html" class="footer-nav-link">About me</a>
+            </div>
+            <div class="footer-column">
+              <h3 class="footer-heading">Follow me</h3>
+              <div class="footer-social-list">
+                <a href="https://www.facebook.com/lynguyenminh2k2" class="footer-social-icon"
+                  ><i class="fab fa-facebook"></i></a
+                ><a href="https://www.facebook.com/lynguyenminh2k2" class="footer-social-icon"
+                  ><i class="fab fa-instagram"></i></a
+                ><a href="https://www.facebook.com/lynguyenminh2k2" class="footer-social-icon"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+        <script src="../../script/loadpage.js"></script>
+    <script>
+      let rating = callrate(); // Example rating
+      function callrate() {
+        let comment_star = document.getElementsByClassName("comment-star")
+        let call = {
+          1:0,
+          2:0,
+          3:0,
+          4:0,
+          5:0
+        }
+        // console.log(call)
+        // console.log(comment_star)
+        let sum_comment = comment_star.length
+        for(let i = 0; i<comment_star.length; i++) {
+          let rate = get_number_star(comment_star[i])
+          call[rate] +=1
+          // console.log(comment_star[i])
+        }
+        let precents = {
+          1:(call[1]/sum_comment)*100,
+          2:(call[2]/sum_comment)*100,
+          3:(call[3]/sum_comment)*100,
+          4:(call[4]/sum_comment)*100,
+          5:(call[5]/sum_comment)*100
+        }
+        let raiting_list = document.getElementsByClassName("raiting-list")[0].children
+        // console.log(raiting_list)
+        for(let i = 0; i < raiting_list.length;i++){
+          children_node = raiting_list[i].children
+          // console.log(children_node)
+          children_node[1].lastElementChild.style.width = Math.round(precents[5 - i]*10)/10 + "%"
+          children_node[2].textContent = Math.round(precents[5 - i]*10)/10 + "%"
+        }
+        // console.log(precents)
+        // console.log(call)
+        // console.log(comment_star)
+        let rate = 0
+        for (let i = 0; i < 5;i++)
+        {
+          rate += (i+1)*precents[i+1]/100
+        }
+        return Math.round(rate*10)/10
+      }
+      function get_number_star(element) {
+        // console.log(element)
+        let childElement = element.children
+        // console.log(childElement)
+        let flag = 0
+        for(let i = 0 ;i<childElement.length;i++){
+          if (childElement[i].className.split(' ')[0] == "fas")
+          {
+            flag +=1
+          }
+        }
+        return flag
+      }
+      function update()
+      {
+        let rating = callrate();
+        let stars = document.querySelectorAll("#rating .star__point");
+        let ratingNumber = document.querySelector("#rating-number");
+
+      // Display the rating number
+        ratingNumber.textContent = rating;
+
+      // Loop through the stars and add the active class to the correct number of stars
+        for (let i = 0; i < 5; i++) {
+          // console.log(stars[i].lastElementChild.className)
+          // console.log((rating*10)%10)
+          if (i < Math.floor(rating)) {
+            stars[i].lastElementChild.className = "fas fa-star"
+          } else {
+            if (rating >=i + 0.5 &&rating<i + 1)
+            {
+              stars[i].lastElementChild.className = "fas fa-star-half-alt"
+            }
+            else
+            {
+              stars[i].lastElementChild.className = "far fa-star"
+            }
+          }
+        }
+      }
+      // Get the rating element and number element
+      let stars = document.querySelectorAll("#rating .star__point");
+      let ratingNumber = document.querySelector("#rating-number");
+
+      // Display the rating number
+      ratingNumber.innerHTML = rating;
+
+      // Loop through the stars and add the active class to the correct number of stars
+      for (let i = 0; i < 5; i++) {
+        // console.log(stars[i].lastElementChild.className)
+        // console.log((rating*10)%10)
+        if (i < Math.floor(rating)) {
+          stars[i].lastElementChild.className = "fas fa-star"
+        } else {
+          if ((rating*10)%10 == 5&& rating == i + 0.5)
+          {
+            stars[i].lastElementChild.className = "fas fa-star-half-alt"
+          }
+          else
+          {
+            stars[i].lastElementChild.className = "far fa-star"
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
+  
