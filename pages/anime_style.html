@@ -1,134 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 
-    
-    <link rel="stylesheet" href="../css/hover-dropdown.css">
-    <link rel="stylesheet" href="../css/fontawesome.css" />
-        <link rel="stylesheet" href="../css/app.css" />
-    <!-- <link rel="stylesheet" href="../css/app1.css" /> -->
-    <title>Shoes</title>
-  </head>
-  <body>
-    <div class="wrapper">
-      <!----------------------------- Header ------------------------------->
-      <section class="header">
-        <div class="container">
-          <!----------------------------- Logo ------------------------------->
-          <div class="header-left">
-            <a href="../index.html" class="header-logo"
-              ><img
-                src="../images/logo-nike.png"
-                alt=""
-                class="header-logo-nike"
-            /></a>
-          </div>
 
-          <!----------------------------- Navigation ------------------------------->
-           <div class="header-middle">
-            <ul class="header-nav">
-              <!-- <li class="header-nav-item">
-                <a href="index.html" class="header-nav-link">Trang chủ</a>
-              </li>
+  <link rel="stylesheet" href="../css/hover-dropdown.css">
+  <link rel="stylesheet" href="../css/fontawesome.css" />
+  <link rel="stylesheet" href="../css/app.css" />
+  <!-- <link rel="stylesheet" href="../css/app1.css" /> -->
+  <title>Shoes</title>
+</head>
 
-              <li class="header-nav-item">
-                <a href="./pages/introduce.html" class="header-nav-link">Giới thiệu</a>
-              </li>
+<body>
+  <div class="wrapper">
+    <!----------------------------- Header ------------------------------->
+    <section class="header">
+      <div class="container">
+        <!----------------------------- Logo ------------------------------->
+        <div class="header-left">
+          <a href="../index.html" class="header-logo"><img src="../images/logo_black.jpg" alt=""
+              class="header-logo-nike" /></a>
+        </div>
 
-              <li class="header-nav-item">
-                <a href="./pages/product.html" class="header-nav-link">Sản phẩm</a>
-              </li>
+        <!----------------------------- Navigation ------------------------------->
+        <div class="header-middle">
+          <ul class="header-nav">
+            <li class="header-nav-item">
+              <a href="../index.html" class="header-nav-link">Home</a>
+            </li>
+            <li class="header-nav-item">
+              <a href="./news.html" class="header-nav-link">Discovery</a>
+            </li>
+            <li class="header-nav-item">
+              <a href="./product.html" class="header-nav-link">Art Shoes</a>
+            </li>
+            <li class="header-nav-item">
+              <a href="./introduce.html" class="header-nav-link">About me</a>
+            </li>
 
-              <li class="header-nav-item">
-                <a href="./pages/news.html" class="header-nav-link">Tin tức</a>
-              </li> -->
 
-              <li class="header-nav-item">
-                <a href="../index.html" class="header-nav-link">Home</a>
-              </li>
-              <li class="header-nav-item">
-                <a href="./news.html" class="header-nav-link">Discovery</a>
-              </li>
-              <li class="header-nav-item">
-                <a href="./product.html" class="header-nav-link">Shoes Photo</a>
-              </li>
-              <li class="header-nav-item">
-                <a href="./introduce.html" class="header-nav-link">About me</a>
-              </li>
+          </ul>
+        </div>
 
-              
-            </ul>
-          </div>
+        <div class="header-right">
+          <ul class="header-group">
 
-          <div class="header-right">
-            <ul class="header-group">
+            <div class="search-container">
+              <input type="text" class="search-box" id="search-input" placeholder="Search">
+              <button type="submit" class="search-button" id="search-button">Search</button>
+            </div>
 
-              <div class="search-container">
-                  <input type="text" class="search-box" id="search-input" placeholder="Search">
-                  <button type="submit" class="search-button" id="search-button">Search</button>
-              </div>
-
-              <script>
+            <script>
               const searchButton = document.getElementById('search-button');
-              searchButton.addEventListener('click', function() { 
+              searchButton.addEventListener('click', function () {
                 const searchInput = document.getElementById('search-input').value;
                 window.location.href = `../search.html?search=${searchInput}`;
               });
-              </script>
+            </script>
 
-              <i class="fa fa-bars header-toggle dropdown" >   
-                <!-- <div class="dropdown-content">
-                  <a href="index.html" >Trang chủ</a>
-                  <a href="./pages/introduce.html">Giới thiệu</a>
-                  <a href="./pages/product.html" >Sản phẩm</a>
-                  <a href="./pages/news.html" >Tin tức</a>
-                </div> -->
-                <div class="dropdown-content">
-                  <a href="../index.html" >Home</a>
-                  <a href="./news.html" >Discovery</a>
-                  <a href="./product.html" >Shoes Photo</a>
-                  <a href="./introduce.html">About me</a>
-                </div>     
-              </i>
+            <i class="fa fa-bars header-toggle dropdown">
+              <div class="dropdown-content">
+                <a href="../index.html">Home</a>
+                <a href="./news.html">Discovery</a>
+                <a href="./product.html">Art Shoes</a>
+                <a href="./introduce.html">About me</a>
+              </div>
+            </i>
 
-            </ul>
-          </div>
+          </ul>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!----------------------------- Banner ------------------------------->
-      <section class="banner">
-        <div class="banner-top">
-          <img src="../images/slider-img.jpg" alt="" class="banner-image" />
-          <div class="banner-content">
-            <div class="banner-content-heading">Shoes Photo</div>
-            <ul class="banner-content-list">
-                <li>
-                    <a href="../index.html" class="banner-content-item">Home</a>
-                </li>
-              <li class="banner-content-item" >
-                Shoes Photo
-              </li>
-            </ul>
-          </div>
+    <!----------------------------- Banner ------------------------------->
+    <section class="banner">
+      <div class="banner-top">
+        <img src="../images/slider-img.jpg" alt="" class="banner-image" />
+        <div class="banner-content">
+          <div class="banner-content-heading">Art Shoes</div>
+          <ul class="banner-content-list">
+            <li>
+              <a href="../index.html" class="banner-content-item">Home</a>
+            </li>
+            <li class="banner-content-item">
+              Art Shoes
+            </li>
+          </ul>
         </div>
-      </section>
+      </div>
+    </section>
 
-
-      <!----------------------------- Product ------------------------------->
-      <section class="product">
-        <div class="container">
-          <div class="product-content">
-            <div class="product-left">
-              <div class="product">
-                <div class="product-group">
-                  <span class="product-title">Filters</span>
+    <!----------------------------- Product ------------------------------->
+    <section class="product">
+      <div class="container">
+        <div class="product-content">
+          <div class="product-left" id="product-left">
+            <div class="product">
+              <div class="product-group">
+                <span class="product-title">Filters</span>
                 <ul class="product-sort">
                   <li class="product-sort-item">
                     <a href="product.html" class="product-sort-link">
@@ -161,7 +136,7 @@
                   </li>
 
                   <li class="product-sort-item">
-                    <a href="#" class="product-sort-link">
+                    <a href="anime_style.html" class="product-sort-link">
                       <span class="product-sort-check"></span>
                       <!-- Giá thấp đến cao -->
                       Anime Style
@@ -177,300 +152,168 @@
                   </li>
                 </ul>
               </div>
-             
-              </div>
-            </div>
-    
-            <div class="product-right">
-              <div class="product-category-list">
-                <div class="product-category-item">
-                  <a href="./product/Nike Air Force 1 Low BLack White DV1331-100.html" class="product-category-link">
-                    <img
-                      src="../images/number2.png"
-                      alt=""
-                      class="product-category-image"
-                    />
-                  </a>
-                  <div class="product-category-info">
-                    <h3 class="product-category-heading">
-                      <a href="./product/Nike Air Force 1 Low BLack White DV1331-100.html" class="product-category-name"
-                        >DV1331-100 Nike Air Force 1 Low BLack White</a
-                      >
-                    </h3>
-                    <span class="product-category-price">2.790.000đ</span>
-                  </div>
-                </div>
-    
-                <div class="product-category-item">
-                  <a href="./product/Nike Air Force 1 Low 07 Just Do It DV1492-101.html" class="product-category-link">
-                    <img
-                      src="../images/number9.png"
-                      alt=""
-                      class="product-category-image"
-                    />
-                  </a>
-                  <div class="product-category-info">
-                    <h3 class="product-category-heading">
-                      <a href="./product/Nike Air Force 1 Low 07 Just Do It DV1492-101.html" class="product-category-name"
-                        >DV1492-101 Nike Air Force 1 Low 07 Just Do It</a
-                      >
-                    </h3>
-                    <span class="product-category-price">3.190.000đ</span>
-                  </div>
-                </div>
-    
-                <div class="product-category-item">
-                  <a href="./product/Nike Air Force 1 Low Just Do It White Neon FB1853-111.html" class="product-category-link">
-                    <img
-                      src="../images/number5.png"
-                      alt=""
-                      class="product-category-image"
-                    />
-                  </a>
-                  <div class="product-category-info">
-                    <h3 class="product-category-heading">
-                      <a href="./product/Nike Air Force 1 Low Just Do It White Neon FB1853-111.html" class="product-category-name"
-                        >FB1853-111 Nike Air Force 1 Low Just Do It White Neon</a
-                      >
-                    </h3>
-                    <span class="product-category-price">3.890.000đ</span>
-                  </div>
-                </div>
-                <div class="product-category-item">
-                  <a href="./product/Nike Air Force 1 07 Black Laser Orange FB7162-081.html" class="product-category-link">
-                    <img
-                      src="../images/number12.png"
-                      alt=""
-                      class="product-category-image"
-                    />
-                  </a>
-                  <div class="product-category-info">
-                    <h3 class="product-category-heading">
-                      <a href="./product/Nike Air Force 1 07 Black Laser Orange FB7162-081.html" class="product-category-name"
-                        >FB7162-081 Nike Air Force 1 07 Black Laser Orange</a
-                      >
-                    </h3>
-                    <span class="product-category-price">3.890.000đ</span> 
-                  </div>
-                </div>
-    
-                <div class="product-category-item">
-                  <a href="./product/Nike Air Force 1 Mid Sun Club White DM0119-100.html" class="product-category-link">
-                    <img
-                      src="../images/number6.png"
-                      alt=""
-                      class="product-category-image"
-                    />
-                  </a>
-                  <div class="product-category-info">
-                    <h3 class="product-category-heading">
-                      <a href="./product/Nike Air Force 1 Mid Sun Club White DM0119-100.html" class="product-category-name"
-                        >DM0119-100 Nike Air Force 1 Mid Sun Club White</a
-                      >
-                    </h3>
-                    <span class="product-category-price">3.890.000đ</span>
-                  </div>
-                </div>
-    
-                <div class="product-category-item">
-                  <a href="./product/Nike Air Force 1 Low White University Blue DR9867-101.html" class="product-category-link">
-                    <img
-                      src="../images/number8.png"
-                      alt=""
-                      class="product-category-image"
-                    />
-                  </a>
-                  <div class="product-category-info">
-                    <h3 class="product-category-heading">
-                      <a href="./product/Nike Air Force 1 Low White University Blue DR9867-101.html" class="product-category-name"
-                        >DR9867-101 Nike Air Force 1 Low White University Blue</a
-                      >
-                    </h3>
-                    <span class="product-category-price">4.390.000đ</span> 
-                  </div>
-                </div>
-    
-                <div class="product-category-item">
-                  <a href="./product/Nike Air Force 1 Low College Pack Midninght Navy DQ7659-101.html" class="product-category-link">
-                    <img
-                      src="../images/number1.png"
-                      alt=""
-                      class="product-category-image"
-                    />
-                  </a>
-                  <div class="product-category-info">
-                    <h3 class="product-category-heading">
-                      <a href="./product/Nike Air Force 1 Low College Pack Midninght Navy DQ7659-101.html" class="product-category-name"
-                        >DQ7659-101 Nike Air Force 1 Low College Pack Midninght Navy</a
-                      >
-                    </h3>
-                    <span class="product-category-price">4.690.000đ</span>
-                  </div>
-                </div>
-    
-                <div class="product-category-item">
-                  <a href="./product/Nike Air Force 1 High Green White DQ7584-300.html" class="product-category-link">
-                    <img
-                      src="../images/number10.png"
-                      alt=""
-                      class="product-category-image"
-                    />
-                  </a>
-                  <div class="product-category-info">
-                    <h3 class="product-category-heading">
-                      <a href="./product/Nike Air Force 1 High Green White DQ7584-300.html" class="product-category-name"
-                        >DQ7584-300 Nike Air Force 1 High Green White</a
-                      >
-                    </h3>
-                    <span class="product-category-price">4.890.000đ</span>
-                  </div>
-                </div>
-    
-                <div class="product-category-item">
-                  <a href="./product/Nike Air Force 1 High Patriots DZ7338-001.html" class="product-category-link">
-                    <img
-                      src="../images/number11.png"
-                      alt=""
-                      class="product-category-image"
-                    />
-                  </a>
-                  <div class="product-category-info">
-                    <h3 class="product-category-heading">
-                      <a href="./product/Nike Air Force 1 High Patriots DZ7338-001.html" class="product-category-name"
-                        >DZ7338-001 Nike Air Force 1 High Patriots</a
-                      >
-                    </h3>
-                    <span class="product-category-price">4.890.000đ</span>
-                  </div>
-                </div>
-                <div class="product-category-item">
-                  <a href="./product/Nike Air Force 1 Mid React White Black DQ7668-100.html" class="product-category-link">
-                    <img
-                      src="../images/number7.png"
-                      alt=""
-                      class="product-category-image"
-                    />
-                  </a>
-                  <div class="product-category-info">
-                    <h3 class="product-category-heading">
-                      <a href="./product/Nike Air Force 1 Mid React White Black DQ7668-100.html" class="product-category-name"
-                        >DQ7668-100 Nike Air Force 1 Mid React White Black</a
-                      >
-                    </h3>
-                    <span class="product-category-price">5.390.000đ</span>
-                  </div>
-                </div>
-    
-                <div class="product-category-item">
-                  <a href="./product/Nike Air Force 1 Low SP Supreme Wheat DN1555-200.html" class="product-category-link">
-                    <img
-                      src="../images/number4.png"
-                      alt=""
-                      class="product-category-image"
-                    />
-                  </a>
-                  <div class="product-category-info">
-                    <h3 class="product-category-heading">
-                      <a href="./product/Nike Air Force 1 Low SP Supreme Wheat DN1555-200.html" class="product-category-name"
-                        >DN1555-200 Nike Air Force 1 Low SP Supreme Wheat</a
-                      >
-                    </h3>
-                    <span class="product-category-price">7.390.000đ</span>
-                  </div>
-                </div>
-    
-                <div class="product-category-item">
-                  <a href="./product/Nike Air Force 1 Low Dusty Red Suede DH0265-600.html" class="product-category-link">
-                    <img
-                      src="../images/number3.png"
-                      alt=""
-                      class="product-category-image"
-                    />
-                  </a>
-                  <div class="product-category-info">
-                    <h3 class="product-category-heading">
-                      <a href="./product/Nike Air Force 1 Low Dusty Red Suede DH0265-600.html" class="product-category-name"
-                        >DN1555-200 Nike Air Force 1 Low Dusty Red Suede</a
-                      >
-                    </h3>
-                    <span class="product-category-price">7.390.000đ</span>
-                  </div>
-                </div>
-              </div>
-              <div class="product-category-page"></div>
             </div>
           </div>
-          <i class="fa-solid fa-filter product-filter" onclick="show()"></i>
-        </div>
-      </section>
-      <!----------------------------- Footer ------------------------------->
-      <section class="footer">
-        <div class="container">
-          <div class="footer-content">
-            <div class="footer-column">
-              <a href="../index.html" class="footer-logo"
-                ><img
-                  src="../images/logo-nike.png"
-                  alt=""
-                  class="footer-logo-nike"
-              /></a>
 
-              <div class="footer-contact">
-                <div class="footer-contact-item">
-                  <i class="fa fa-location"></i>
-                  <span class="footer-contact-title"
-                    >Shoes Maigc, Image Generated by AI
-                  </span>
-                </div>
-
-                <div class="footer-contact-item">
-                  <i class="fa fa-phone"></i>
-                  <span class="footer-contact-title">07385637295</span>
-                </div>
-
-                <div class="footer-contact-item">
-                  <i class="fa fa-headset"></i>
-                  <span class="footer-contact-title">support@shoesmagic.ai </span>
+          <div class="product-right">
+            <div class="product-category-list">
+              <div class="product-category-item">
+                <a href="./product/subpage_product_01.html"
+                  class="product-category-link">
+                  <img src="http://103.186.100.203:9000/json/images/1_sneaker_16.jpg" alt="" class="product-category-image" />
+                </a>
+                <div class="product-category-info">
+                  <h3 class="product-category-heading">
+                    <a href="./product/subpage_product_01.html"
+                      class="product-category-name">FB7162-081 <br>   Caption in here</a>
+                    <!-- <div class = "btn-expand">Show More</div> -->
+                  </h3>
+                  <!-- <span class="product-category-price">3.890.000đ</span> -->
                 </div>
               </div>
 
+              <div class="product-category-item">
+                <a href="./product/subpage_product_01.html"
+                  class="product-category-link">
+                  <img src="http://103.186.100.203:9000/json/images/1_sneaker_16.jpg" alt="" class="product-category-image" />
+                </a>
+                <div class="product-category-info">
+                  <h3 class="product-category-heading">
+                    <a href="./product/subpage_product_01.html"
+                      class="product-category-name">FB7162-081 <br>   Caption in here</a>
+                    <!-- <div class = "btn-expand">Show More</div> -->
+                  </h3>
+                  <!-- <span class="product-category-price">3.890.000đ</span> -->
+                </div>
+              </div>
+              <div class="product-category-item">
+                <a href="./product/subpage_product_01.html"
+                  class="product-category-link">
+                  <img src="http://103.186.100.203:9000/json/images/1_sneaker_16.jpg" alt="" class="product-category-image" />
+                </a>
+                <div class="product-category-info">
+                  <h3 class="product-category-heading">
+                    <a href="./product/subpage_product_01.html"
+                      class="product-category-name">FB7162-081 <br>   Caption in here</a>
+                    <!-- <div class = "btn-expand">Show More</div> -->
+                  </h3>
+                  <!-- <span class="product-category-price">3.890.000đ</span> -->
+                </div>
+              </div>
+
+              <div class="product-category-item">
+                <a href="./product/subpage_product_01.html"
+                  class="product-category-link">
+                  <img src="http://103.186.100.203:9000/json/images/1_sneaker_16.jpg" alt="" class="product-category-image" />
+                </a>
+                <div class="product-category-info">
+                  <h3 class="product-category-heading">
+                    <a href="./product/subpage_product_01.html"
+                      class="product-category-name">FB7162-081 <br>   Caption in here</a>
+                    <!-- <div class = "btn-expand">Show More</div> -->
+                  </h3>
+                  <!-- <span class="product-category-price">3.890.000đ</span> -->
+                </div>
+              </div>
+
+              <div class="product-category-item">
+                <a href="./product/subpage_product_01.html"
+                  class="product-category-link">
+                  <img src="http://103.186.100.203:9000/json/images/1_sneaker_16.jpg" alt="" class="product-category-image" />
+                </a>
+                <div class="product-category-info">
+                  <h3 class="product-category-heading">
+                    <a href="./product/subpage_product_01.html"
+                      class="product-category-name">FB7162-081 <br>   Caption in here</a>
+                    <!-- <div class = "btn-expand">Show More</div> -->
+                  </h3>
+                  <!-- <span class="product-category-price">3.890.000đ</span> -->
+                </div>
+              </div>
+
+              <div class="product-category-item">
+                <a href="./product/Nike Air Force 1 07 Black Laser Orange FB7162-081.html"
+                  class="product-category-link">
+                  <img src="http://103.186.100.203:9000/json/images/1_sneaker_16.jpg" alt="" class="product-category-image" />
+                </a>
+                <div class="product-category-info">
+                  <h3 class="product-category-heading">
+                    <a href="./product/Nike Air Force 1 07 Black Laser Orange FB7162-081.html"
+                      class="product-category-name">FB7162-081 <br>   Caption in here</a>
+                    <!-- <div class = "btn-expand">Show More</div> -->
+                  </h3>
+                  <!-- <span class="product-category-price">3.890.000đ</span> -->
+                </div>
+              </div>
+
+            </div>
+            <div class="product-category-page"></div>
+          </div>
+        </div>
+        <i class="fa-solid fa-filter product-filter" onclick="show()"></i>
+        <!-- <script>
+            let parents = document.getElementsByClassName("product-category-heading")
+            function isOverflow(element) {
+              return element.scrollHeight >  53
+            }
+            if (isOverflow(parents[0])) {
+              parents[0].lastElementChild.className += " btn-show"
               
-            </div>
-            <div class="footer-column">
-              <h3 class="footer-heading">Shoes Magic</h3>
-              <a href="../index.html" class="footer-nav-link">Home</a>
-              <a href="news.html" class="footer-nav-link">Discovery</a>              
-              <a href="product.html" class="footer-nav-link">Shoes Photo</a>
-              <a href="introduce.html" class="footer-nav-link">About me</a>
-            </div>
-            <div class="footer-column">
-              <h3 class="footer-heading">Follow me</h3>
-              <div class="footer-social-list">
-                <a href="https://www.facebook.com/lynguyenminh2k2" class="footer-social-icon"
-                  ><i class="fab fa-facebook"></i></a
-                ><a href="https://www.facebook.com/lynguyenminh2k2" class="footer-social-icon"
-                  ><i class="fab fa-instagram"></i></a
-                ><a href="https://www.facebook.com/lynguyenminh2k2" class="footer-social-icon"
-                  ><i class="fab fa-youtube"></i
-                ></a>
+            }
+          </script> -->
+      </div>
+    </section>
+    <!----------------------------- Footer ------------------------------->
+    <section class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <a href="../index.html" class="footer-logo"><img src="../images/logo_black.jpg" alt=""
+                class="footer-logo-nike" /></a>
+
+            <div class="footer-contact">
+              <div class="footer-contact-item">
+                <i class="fa fa-location"></i>
+                <span class="footer-contact-title">Shoes Maigc, Image Generated by AI
+                </span>
               </div>
-              <!-- <h3 class="footer-heading">Đăng ký để nhận tin</h3>
-              <form action="" class="footer-form">
-                <input
-                  type="email"
-                  name=""
-                  placeholder="Nhập địa chỉ emal"
-                  id=""
-                  class="footer-form-input"
-                /> -->
-                <!-- <button type="submit" class="footer-form-button">Gửi</button> -->
-              <!-- </form> -->
+
+              <div class="footer-contact-item">
+                <i class="fa fa-phone"></i>
+                <span class="footer-contact-title">07385637295</span>
+              </div>
+
+              <div class="footer-contact-item">
+                <i class="fa fa-headset"></i>
+                <span class="footer-contact-title">support@shoesmagic.ai </span>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="footer-column">
+            <h3 class="footer-heading">Shoes Magic</h3>
+            <a href="../index.html" class="footer-nav-link">Home</a>
+            <a href="news.html" class="footer-nav-link">Discovery</a>
+            <a href="product.html" class="footer-nav-link">Art Shoes</a>
+            <a href="introduce.html" class="footer-nav-link">About me</a>
+          </div>
+          <div class="footer-column">
+            <h3 class="footer-heading">Follow me</h3>
+            <div class="footer-social-list">
+              <a href="https://www.facebook.com/lynguyenminh2k2" class="footer-social-icon"><i
+                  class="fab fa-facebook"></i></a><a href="https://www.facebook.com/lynguyenminh2k2"
+                class="footer-social-icon"><i class="fab fa-instagram"></i></a><a
+                href="https://www.facebook.com/lynguyenminh2k2" class="footer-social-icon"><i
+                  class="fab fa-youtube"></i></a>
             </div>
           </div>
         </div>
-      </section>
-    </div>
-    <script src="../script/loadpage.js"></script>
-    <script src="../script/show.js"></script>
-  </body>
+      </div>
+    </section>
+  </div>
+  <script src="../script/loadpage.js"></script>
+  <script src="../script/show.js"></script>
+</body>
+
 </html>

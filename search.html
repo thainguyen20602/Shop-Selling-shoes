@@ -1,165 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 
 
-    <link rel="stylesheet" href="css/hover-dropdown.css">
-    <link rel="stylesheet" href="css/fontawesome.css" />
-    <!-- <link rel="stylesheet" href="css/app1.css"> -->
-    <link rel="stylesheet" href="css/app.css" />
-    <link rel="stylesheet" href="css/SlideShow.css">
-    <title>Shoes</title>
-  </head>
-  <body>
-    <div class="wrapper">
-      <!----------------------------- Header ------------------------------->
-      <section class="header">
-        <div class="container">
-          <div class="header-left">
-            <!-- Logo -->
-            <img src="./images/logo-nike.png" alt="" class="header-logo-nike" />
-          </div>
+  <link rel="stylesheet" href="css/hover-dropdown.css">
+  <link rel="stylesheet" href="css/fontawesome.css" />
+  <!-- <link rel="stylesheet" href="css/app1.css"> -->
+  <link rel="stylesheet" href="css/app.css" />
+  <link rel="stylesheet" href="css/SlideShow.css">
+  <title>Shoes</title>
+</head>
 
-          <!----------------------------- Navigation ------------------------------->
-          <div class="header-middle">
-            <ul class="header-nav">
-              <!-- <li class="header-nav-item">
-                <a href="index.html" class="header-nav-link">Trang chủ</a>
-              </li>
+<body>
+  <div class="wrapper">
+    <!----------------------------- Header ------------------------------->
+    <section class="header">
+      <div class="container">
+        <div class="header-left">
+          <!-- Logo -->
+          <img src="./images/logo_black.jpg" alt="" class="header-logo-nike" />
+        </div>
 
-              <li class="header-nav-item">
-                <a href="./pages/introduce.html" class="header-nav-link">Giới thiệu</a>
-              </li>
+        <!----------------------------- Navigation ------------------------------->
+        <div class="header-middle">
+          <ul class="header-nav">
+            <li class="header-nav-item">
+              <a href="index.html" class="header-nav-link">Home</a>
+            </li>
+            <li class="header-nav-item">
+              <a href="./pages/news.html" class="header-nav-link">Discovery</a>
+            </li>
+            <li class="header-nav-item">
+              <a href="./pages/product.html" class="header-nav-link">Art Shoes</a>
+            </li>
+            <li class="header-nav-item">
+              <a href="./pages/introduce.html" class="header-nav-link">About me</a>
+            </li>
 
-              <li class="header-nav-item">
-                <a href="./pages/product.html" class="header-nav-link">Sản phẩm</a>
-              </li>
 
-              <li class="header-nav-item">
-                <a href="./pages/news.html" class="header-nav-link">Tin tức</a>
-              </li> -->
+          </ul>
+        </div>
 
-              <li class="header-nav-item">
-                <a href="index.html" class="header-nav-link">Home</a>
-              </li>
-              <li class="header-nav-item">
-                <a href="./pages/news.html" class="header-nav-link">Discovery</a>
-              </li>
-              <li class="header-nav-item">
-                <a href="./pages/product.html" class="header-nav-link">Shoes Photo</a>
-              </li>
-              <li class="header-nav-item">
-                <a href="./pages/introduce.html" class="header-nav-link">About me</a>
-              </li>
+        <div class="header-right">
+          <ul class="header-group">
 
-              
-            </ul>
-          </div>
+            <div class="search-container">
+              <input type="text" class="search-box" id="search-input" placeholder="Search">
+              <button type="submit" class="search-button" id="search-button">Search</button>
+            </div>
 
-          <div class="header-right">
-            <ul class="header-group">
-
-              <div class="search-container">
-                  <input type="text" class="search-box" id="search-input" placeholder="Search">
-                  <button type="submit" class="search-button" id="search-button">Search</button>
-              </div>
-
-              <script>
+            <script>
               const searchButton = document.getElementById('search-button');
-              searchButton.addEventListener('click', function() { 
+              searchButton.addEventListener('click', function () {
                 const searchInput = document.getElementById('search-input').value;
                 window.location.href = `./search.html?search=${searchInput}`;
               });
-              </script>
+            </script>
 
-              <i class="fa fa-bars header-toggle dropdown" >   
-                <!-- <div class="dropdown-content">
-                  <a href="index.html" >Trang chủ</a>
-                  <a href="./pages/introduce.html">Giới thiệu</a>
-                  <a href="./pages/product.html" >Sản phẩm</a>
-                  <a href="./pages/news.html" >Tin tức</a>
-                </div> -->
-                <div class="dropdown-content">
-                  <a href="index.html" >Home</a>
-                  <a href="./pages/news.html" >Discovery</a>
-                  <a href="./pages/product.html" >Shoes Photo</a>
-                  <a href="./pages/introduce.html">About me</a>
+            <i class="fa fa-bars header-toggle dropdown">
+              <div class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="./pages/news.html">Discovery</a>
+                <a href="./pages/product.html">Art Shoes</a>
+                <a href="./pages/introduce.html">About me</a>
 
-                </div>     
-              </i>
+              </div>
+            </i>
 
-            </ul>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="container">
+      <script src="./script/SlideShow.js">
+      </script>
+
+      <!----------------------------- Content ------------------------------->
+
+      <section class="content">
+        <div class="container">
+          <div class="content-title">
+            <span class="content-heading">Results Generated by AI </span>
+            <span class="content-desc"></span>
+          </div>
+
+          <!-- Discovery -->
+          <div class="content-list">
           </div>
         </div>
       </section>
 
-      <section id="container">
-        <!----------------------------- Slider ------------------------------->
-        <!-- <div class="slideshow-container"> -->
 
-          <!-- Full-width images with number and caption text -->
-          <!-- <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-            <img src="./images/banner2.jpg" style="width:100%">
-            <div class="text">Caption Text</div>
-          </div>
-        
-          <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
-            <img src="./images/banner3.jpg" style="width:100%">
-            <div class="text">Caption Two</div>
-          </div>
-        
-          <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-            <img src="./images/banner4.png" style="width:100%">
-            <div class="text">Caption Three</div>
-          </div> -->
-        
-          <!-- Next and previous buttons -->
-          <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div> -->
-        <!-- <br> -->
 
-        <!-- <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span> 
-          <span class="dot" onclick="currentSlide(2)"></span> 
-          <span class="dot" onclick="currentSlide(3)"></span>  -->
-        <!-- </div> -->
-        <script src="./script/SlideShow.js"> 
-        </script>
+      <!-- Discovery -->
+      <div class="content-list">
+      </div>
+  </div>
+  </section>
 
-        <!----------------------------- Content ------------------------------->
-
-        <section class="content">
-          <div class="container">
-            <div class="content-title">
-              <span class="content-heading">Results Generated by AI </span>
-              <span class="content-desc"
-                ></span
-              >
-            </div>
-
-            <!-- Discovery -->
-            <div class="content-list">
-            </div>
-          </div>
-        </section>
-
-        <!----------------------------- News ------------------------------->
-        <section class="news">
+  <!----------------------------- Similar Results  ------------------------------->
+  <!-- <section class="news">
           <div class="container">
             <div class="content-title">
               <span class="content-heading">Thành viên</span>
-              <span class="content-desc">
-                <!-- Người thành lập -->
+              <span class="content-desc"> -->
+  <!-- Người thành lập
               </span>
             </div>
             <div class="news-list">
@@ -221,106 +174,94 @@
             </div>
           </div>
         </section>
-      </section>
-      <!----------------------------- Footer ------------------------------->
-      <section class="footer">
-        <div class="container">
-          <div class="footer-content">
-            <div class="footer-column">
-              <a href="index.html" class="footer-logo"
-                ><img
-                  src="./images/logo-nike.png"
-                  alt=""
-                  class="footer-logo-nike"
-              /></a>
+      </section> -->
+  <!----------------------------- Footer ------------------------------->
+  <section class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <a href="index.html" class="footer-logo"><img src="./images/logo_black.jpg" alt=""
+              class="footer-logo-nike" /></a>
 
-              <div class="footer-contact">
-                <div class="footer-contact-item">
-                  <i class="fa fa-location"></i>
-                  <span class="footer-contact-title"
-                    >Shoes Maigc, Image Generated by AI
-                  </span>
-                </div>
-
-                <div class="footer-contact-item">
-                  <i class="fa fa-phone"></i>
-                  <span class="footer-contact-title">07385637295</span>
-                </div>
-
-                <div class="footer-contact-item">
-                  <i class="fa fa-headset"></i>
-                  <span class="footer-contact-title">support@shoesmagic.ai </span>
-                </div>
-              </div>
-
-              
+          <div class="footer-contact">
+            <div class="footer-contact-item">
+              <i class="fa fa-location"></i>
+              <span class="footer-contact-title">Shoes Maigc, Image Generated by AI
+              </span>
             </div>
-            <div class="footer-column">
-              <h3 class="footer-heading">Shoes Magic</h3>
-              <a href="index.html" class="footer-nav-link">Home</a>
-              <a href="./pages/news.html" class="footer-nav-link">Discovery</a>              
-              <a href="./pages/product.html" class="footer-nav-link">Shoes Photo</a>
-              <a href="./pages/introduce.html" class="footer-nav-link">About me</a>
+
+            <div class="footer-contact-item">
+              <i class="fa fa-phone"></i>
+              <span class="footer-contact-title">07385637295</span>
             </div>
-            <div class="footer-column">
-              <h3 class="footer-heading">Follow me</h3>
-              <div class="footer-social-list">
-                <a href="https://www.facebook.com/lynguyenminh2k2" class="footer-social-icon"
-                  ><i class="fab fa-facebook"></i></a
-                ><a href="https://www.facebook.com/lynguyenminh2k2" class="footer-social-icon"
-                  ><i class="fab fa-instagram"></i></a
-                ><a href="https://www.facebook.com/lynguyenminh2k2" class="footer-social-icon"
-                  ><i class="fab fa-youtube"></i
-                ></a>
-              </div>
-              <!-- <h3 class="footer-heading">Đăng ký để nhận tin</h3>
-              <form action="" class="footer-form">
-                <input
-                  type="email"
-                  name=""
-                  placeholder="Nhập địa chỉ emal"
-                  id=""
-                  class="footer-form-input"
-                /> -->
-                <!-- <button type="submit" class="footer-form-button">Gửi</button> -->
-              <!-- </form> -->
+
+            <div class="footer-contact-item">
+              <i class="fa fa-headset"></i>
+              <span class="footer-contact-title">support@shoesmagic.ai </span>
             </div>
           </div>
+
+
         </div>
-      </section>
+        <div class="footer-column">
+          <h3 class="footer-heading">Shoes Magic</h3>
+          <a href="index.html" class="footer-nav-link">Home</a>
+          <a href="./pages/news.html" class="footer-nav-link">Discovery</a>
+          <a href="./pages/product.html" class="footer-nav-link">Art Shoes</a>
+          <a href="./pages/introduce.html" class="footer-nav-link">About me</a>
+        </div>
+        <div class="footer-column">
+          <h3 class="footer-heading">Follow me</h3>
+          <div class="footer-social-list">
+            <a href="https://www.facebook.com/lynguyenminh2k2" class="footer-social-icon"><i
+                class="fab fa-facebook"></i></a><a href="https://www.facebook.com/lynguyenminh2k2"
+              class="footer-social-icon"><i class="fab fa-instagram"></i></a><a
+              href="https://www.facebook.com/lynguyenminh2k2" class="footer-social-icon"><i
+                class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
     </div>
-    <script src="./script/loadpage.js"></script>
-    <script src="./script/snow.js"></script>
-    <script>
+  </section>
+  </div>
+  <script src="./script/loadpage.js"></script>
+  <script src="./script/snow.js"></script>
+  <script>
     const search = new URL(window.location.href).searchParams.get('search');
-    fetch('http://103.186.100.203:9000/json/test/shoe_discovery.json')
+    // fetch('http://103.186.100.203:9000/json/test/shoe_discovery.json')
+    fetch('http://103.186.100.217:5000/api/v1/appregator', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        service: 'lexica',
+        prompt: 'shoes',
+        page: 0,
+        number_of_result: 20,
+        nsfw: true})
+    })
       .then(response => response.json())
       .then(data => {
-        // const imagesContainer = document.getElementById('images-container');
         const contentList = document.querySelector(".content-list")
-        for (let i = 20; i<24; i++) {
-          const image = data[i];
+        for (let i = 20; i < 24; i++) {
+          const image = data['results'][i];
           const imageElement = document.createElement('img');
-          // imageElement.src = image.src;
-          // imagesContainer.appendChild(imageElement);
-          // const contentItem = document.createElement("div");
-          // contentItem.classList.add("content-item"); 
 
-          
           const contentItem = document.createElement("div");
           contentItem.classList.add("content-item");
-        
+
           const contentImage = document.createElement("img");
-          contentImage.src = data[i].url;
+          contentImage.src = image.src;
           contentImage.alt = "";
           contentImage.classList.add("content-image");
-        
+
           contentItem.appendChild(contentImage);
-          contentList.appendChild(contentItem);      
+          contentList.appendChild(contentItem);
         }
       })
       .catch(error => console.error(error));
-    </script>
-  </body>
-</html>
+  </script>
+</body>
 
+</html>

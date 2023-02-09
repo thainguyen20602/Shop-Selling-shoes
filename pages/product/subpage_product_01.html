@@ -26,7 +26,7 @@
           <div class="header-left">
             <a href="../../index.html" class="header-logo"
               ><img
-                src="../../images/logo-nike.png"
+                src="../../images/logo_black.jpg"
                 alt=""
                 class="header-logo-nike"
             /></a>
@@ -43,7 +43,7 @@
                 <a href="../news.html" class="header-nav-link">Discovery</a>
               </li>
               <li class="header-nav-item">
-                <a href="../product.html" class="header-nav-link">Shoes Photo</a>
+                <a href="../product.html" class="header-nav-link">Art Shoes</a>
               </li>
               <li class="header-nav-item">
                 <a href="../introduce.html" class="header-nav-link">About me</a>
@@ -70,16 +70,11 @@
               </script>
 
               <i class="fa fa-bars header-toggle dropdown" >   
-                <!-- <div class="dropdown-content">
-                  <a href="index.html" >Trang chủ</a>
-                  <a href="./pages/introduce.html">Giới thiệu</a>
-                  <a href="./pages/product.html" >Sản phẩm</a>
-                  <a href="./pages/news.html" >Tin tức</a>
-                </div> -->
+
                 <div class="dropdown-content">
                   <a href="../../index.html" >Home</a>
                   <a href="../news.html" >Discovery</a>
-                  <a href="../product.html" >Shoes Photo</a>
+                  <a href="../product.html" >Art Shoes</a>
                   <a href="../introduce.html">About me</a>
                 </div>     
               </i>
@@ -109,31 +104,10 @@
                   <div class="order-left">
                     <div id="slider1" class="sliderwrapper">
                       <div class="contentdiv">
-                        <img src="../../images/number12.png" alt="">
+                        <img src="http://103.186.100.203:9000/json/images/1_sneaker_16.jpg" alt="">
                       </div>
-                      <!-- <div class="contentdiv">
-                        <img src="../../images/number12_1.png" alt="">
-                      </div>
-                      <div class="contentdiv">
-                        <img src="../../images/number12_2.png" alt="">
-                      </div>
-                      <div class="contentdiv">
-                        <img src="../../images/number12_3.png" alt="">
-                      </div> -->
                     </div>
                     <div id="paginate-slider1" class="pagination">
-                      <!-- <a href="#" class="toc anotherclass">
-                        <img src="../../images/number12.png" alt="">
-                      </a> -->
-                      <!-- <a href="#" class="toc anotherclass">
-                        <img src="../../images/number12_1.png" alt="">
-                      </a>
-                      <a href="#" class="toc anotherclass">
-                        <img src="../../images/number12_2.png" alt="">
-                      </a>
-                      <a href="#" class="toc anotherclass">
-                        <img src="../../images/number12_3.png" alt="">
-                      </a> -->
                     </div>
                     <script type="text/javascript">
 
@@ -160,72 +134,39 @@
                       </div> -->
                       <form action="" id="form" onsubmit="return checkvalue()">
                             <div class="form-order" style="padding-top: 20px;">
-                                <label class="form-order-left" for="movement">Vận chuyển tới</label>
-                                <input type="text" id="movement"class="form-order-right">
-                            </div>
-                            <div class="form-order">
-                              <label class="form-order-left" for="color">Màu</label>
-                              <select name="color" id="color" class="form-order-right boder-option">
-                                <!-- <option value="Trắng" class="boder-option" >Trắng</option> -->
-                                <option value="Đen" class="boder-option">Đen - Vàng</option>
-                              </select>
-                            </div>
-                            <div class="form-order"> 
-                              <label class="form-order-left" for="size">Size</label>
-                              <select name="color" id="size" class="form-order-right boder-option">
-                                <option value="36" class="boder-option" >36</option>
-                                <option value="37" class="boder-option">37</option>
-                                <option value="38" class="boder-option" >38</option>
-                                <option value="39" class="boder-option">39</option>
-                                <option value="40" class="boder-option" >40</option>
-                                <option value="41" class="boder-option">41</option>
-                                <option value="42" class="boder-option" >42</option>
-                                <option value="43" class="boder-option">43</option>
-                              </select>
+                                <label class="form-order-left" for="movement">Prompt</label>
+                                <label class="form-order-right" for="">Prompt in here</label>
+                                <!-- <input type="text" id="movement"class="form-order-right" value="Prompt in here"> -->
                             </div>
                             <div class="form-order" style="padding-top: 20px;">
-                              <label class="form-order-left" for="count">Số lượng</label>
-                              <div class="countdown form-order-right">
-                                <button class="btn" type="button" onclick="countdown(-1)">-</button>
-                                <input type="text" id="count" value="1">
-                                <button class="btn" type="button" onclick="countdown(1)">+</button>
-                                <script type="text/javascript">
-                                  function countdown(a)
-                                  {
-                                    let count = document.getElementById("count")
-                                    // console.log(count.value)
-                                    let number = Number(count.value) + a
-                                    if (number <= 0)
-                                    {
-                                      alert("Số lượng phải lớn hơn 0")
-                                      number = 1
-                                    }
-                                    count.value = number
-                                  }
-                                </script>
-                              </div>
+                              <label class="form-order-left" for="movement">Created by</label>
+                              <label class="form-order-right" for="">User id in here</label>
+
+                              <!-- <input type="text" id="movement"class="form-order-right"> -->
+                          </div>
+                          <div class="form-order" style="padding-top: 20px;">
+                            <label class="form-order-left" for="movement">Price</label>
+                            <label class="form-order-right" for="">Price in here</label>
+
+                            <!-- <input type="text" id="movement"class="form-order-right"> -->
+                        </div>                          
                           </div>
                             <div class="order-submit form-order">
                               <div class="left">
-                                <input type="button" class="order-submit-button order-submit-button-left" value="Thêm vào giỏ hàng">
+                                <input type="button" class="order-submit-button order-submit-button-left" value="Register to buy">
                               </div>
+
                               <div class="right">
-                                <input type="submit" class="order-submit-button order-submit-button-right" Value="Mua ngay">
+                                <!-- <input type="submit" class="order-submit-button order-submit-button-right" value="Remix"> -->
+                                <!-- <label href="search.html?search=search-text" type="submit" class="order-submit-button order-submit-button-right" value="Remix">Remix</label> -->
+                                <div>
+                                  <a href="../../search.html?search=prompt in here">
+                                <label type="submit" class="order-submit-button order-submit-button-right" value="Remix">Remix</label>
+                                    
+                                  </a>
+                                </div>
                               </div>
                             </div>
-                            <script type="text/javascript">
-                              function checkvalue()
-                              {
-                                let check = document.getElementById("movement")
-                                console.log(check)
-                                if (check.value == "")
-                                {
-                                  alert("Bạn chưa nhập địa chỉ")
-                                  check.focus()
-                                }
-                                return false
-                              }
-                            </script>
                       </form>
                     </div>
                     <div>
@@ -233,100 +174,29 @@
                     </div>
                 </div>
             </div>
-          <div class="product-details">
+            <div class="product-details">
             <h3 class="product-details-header">
-              Chi tiết sản phẩm
-            </h3>
-            <div class="product-details-item">
-              <p class="product-details-item-left">
-                Danh mục
-              </p>
-              <p class="product-details-item-right">
-                <a href="../../index.html">Shoes</a>&ensp;
-                <a href="../product.html">Sản Phẩm</a>&ensp;
-                <a href="">Nike Air Force 1 07 Black Laser Orange FB7162-081</a>
-              </p>
-            </div>
-            <div class="product-details-item">
-              <p class="product-details-item-left">
-                Loại Khóa
-              </p>
-              <p class="product-details-item-right">
-                Khóa dây
-              </p>
-            </div>
-            <div class="product-details-item">
-              <p class="product-details-item-left">
-                Kho hàng
-              </p>
-              <p class="product-details-item-right">
-                462857
-              </p>
-            </div>
-            <div class="product-details-item">
-              <p class="product-details-item-left">
-                Chất Liệu
-              </p>
-              <p class="product-details-item-right">
-                Canvas
-              </p>
-            </div>
-            <div class="product-details-item">
-              <p class="product-details-item-left">
-                Xuất Xứ
-              </p>
-              <p class="product-details-item-right">
-                Việt Nam
-              </p>
-            </div>
-            <div class="product-details-item">
-              <p class="product-details-item-left">
-                Chiều cao cổ giày
-              </p>
-              <p class="product-details-item-right">
-                Cổ thấp
-              </p>
-            </div>
-            <div class="product-details-item">
-              <p class="product-details-item-left">
-                Giày cao gót
-              </p>
-              <p class="product-details-item-right">
-                Trung bình
-              </p>
-            </div>
-            <div class="product-details-item">
-              <p class="product-details-item-left">
-                Gửi từ
-              </p>
-              <p class="product-details-item-right">
-                Khoa KHMT, Trường Đại học CNTT, TP.HCM
-              </p>
-            </div>
-            <h3 class="product-details-header">
-              Mô tả sản phẩm
+              Product Description
             </h3>
             <div class="product-details-item">
               <ul class="dot">
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li> 
-                <li>Vestibulum sagittis neque at est egestas venenatis.</li>
-                <li>Nam ullamcorper libero ac feugiat ultricies.</li>
-                <li>
-                  Donec lobortis nisl vel sapien blandit, vel feugiat elit eleifend.</li>
-                <li>Donec faucibus tellus accumsan leo sodales dictum.</li>
-                <li>Ut sit amet risus quis nulla sagittis varius.</li>
+                <li>Description</li> 
+                <li>Description</li> 
+                <li>Description</li> 
+                <li>Description</li> 
+
               </ul>
             </div>
           </div>
           <div class="product-comments">
             <h3 class="product-details-header">
-              Đánh giá sản phẩm
+              Product Review and Feedback
             </h3>
             <div class="product-comments-ratings">
               <div class = "product-comments-ratings-left">
                 <div>
-                  <span class = "score" id="rating-number" >5.0</span>
-                  <span>trên 5</span>
+                  <span class = "score" id="rating-number" >5</span>
+                  <span> / 5</span>
                 </div>
                 <div class="rating-star" id="rating">
                   <div class="star">
@@ -407,12 +277,12 @@
               <div class="comment__item">
                 <div class="item-top">
                   <p class="txtname">
-                    Nguyễn Khắc Thái
+                    User 00001
                   </p>
-                  <p class="tickbuy">
+                  <!-- <p class="tickbuy">
                     <i class="fas fa-check-circle"></i>
                     Đã mua hàng
-                  </p>
+                  </p> -->
                 </div>
                 <div class="item-rate">
                   <div class="comment-star">
@@ -425,19 +295,19 @@
                 </div>
                 <div class="comment-content">
                   <p class="cmt-txt">
-                    Tốt
+                    Comment in here 
                   </p>
                 </div>
               </div>
               <div class="comment__item">
                 <div class="item-top">
                   <p class="txtname">
-                    Nguyễn Khắc Thái
+                    User 001201
                   </p>
-                  <p class="tickbuy">
+                  <!-- <p class="tickbuy">
                     <i class="fas fa-check-circle"></i>
                     Đã mua hàng
-                  </p>
+                  </p> -->
                 </div>
                 <div class="item-rate">
                   <div class="comment-star">
@@ -450,7 +320,7 @@
                 </div>
                 <div class="comment-content">
                   <p class="cmt-txt">
-                    Tốt
+                    Comment in here 
                   </p>
                 </div>
               </div>
@@ -459,16 +329,16 @@
               <div class="comment-btn-add" onclick="showform()">
                  <p>
                   <i class="fas fa-comment-plus"></i>
-                  Viết đánh giá
+                  Comments
                  </p> 
               </div>
             </div>
             <div class="read-assets hide" id = "read-assets">
               <div class="read-assets-top">
                 <p class="read-assets-title">
-                  Đánh giá
+                  Review
                 </p>
-                <div class="read-assets-close btn-close-menu" id = "btn-close-menu" onclick="hideshow()">Đóng
+                <div class="read-assets-close btn-close-menu" id = "btn-close-menu" onclick="hideshow()">Exit
                 </div>
               </div>
               <div class="read-assets-main">
@@ -479,23 +349,23 @@
                     <ul class = "ul-star">
                       <li onclick="select_start(1)">
                         <i class="far fa-star"></i>
-                        <p>Rất tệ</p>
+                        <p></p>
                       </li>
                       <li onclick="select_start(2)">
                         <i class="far fa-star"></i>
-                        <p>Tệ</p>
+                        <p></p>
                       </li>
                       <li onclick="select_start(3)">
                         <i class="far fa-star"></i>
-                        <p>Bình thường</p>
+                        <p></p>
                       </li>
                       <li onclick="select_start(4)">
                         <i class="far fa-star"></i>
-                        <p>Tốt</p>
+                        <p></p>
                       </li>
                       <li onclick="select_start(5)">
                         <i class="far fa-star"></i>
-                        <p>Rất tốt</p>
+                        <p></p>
                       </li>
                     </ul>
                   </div>
@@ -505,11 +375,11 @@
                         <textarea name="" id="inputrating-comment" placeholder="Mời bạn chia sẻ một số cảm nhận về sản phẩm ..."></textarea>
                       </div>
                     </div>
-                    <div class="list-input">
+                    <!-- <div class="list-input">
                       <input type="text" class="input-assess" id="input-assess" placeholder="Họ và tên (bắc buộc)">
-                    </div>
+                    </div> -->
                     <div class="submit-assess" onclick="addcomment()">
-                      Gửi đánh giá ngay
+                      Submit 
                     </div>
                   </div>
                   <script>
@@ -517,14 +387,18 @@
                     function addcomment()
                     {
                       // --------------------------------console.log(number_score)
-                      let element_name = document.getElementById("input-assess")
+                      // let element_name = document.getElementById("input-assess")
+                      // let element_name = 'AI shoes'
+
                       let all_comments = document.getElementById("all-comment")
-                      let name = element_name.value
-                      if (name == "")
-                      {
-                        element_name.focus()
-                        alert("Bạn chưa nhập họ và tên")
-                      }
+                      let name = 'user 00' + Math.floor(Math.random() * 10) + 1;
+                      // random user id 
+                      // if (name == "")
+                      // {
+                      //   element_name.focus()
+                      //   alert("Please enter user id !")
+                      // }
+                      if (1==2) {}
                       else{
                         let comment = document.getElementById("inputrating-comment").value
                         let element_comment = document.createElement("div")
@@ -545,7 +419,7 @@
                         top_p_2.className = "tickbuy"
                         let element_i = document.createElement("i")
                         element_i.className = "fas fa-check-circle"
-                        top_p_2.innerHTML = "<i class='fas fa-check-circle'></i>" + " Đã mua hàng "
+                        // top_p_2.innerHTML = "<i class='fas fa-check-circle'></i>" + " Đã mua hàng "
                         element_top.appendChild(top_p_1)
                         element_top.appendChild(top_p_2)
                         // console.log(element_top)
@@ -638,7 +512,7 @@
             <div class="footer-column">
               <a href="../../index.html" class="footer-logo"
                 ><img
-                  src="../../images/logo-nike.png"
+                  src="../../images/logo_black.jpg"
                   alt=""
                   class="footer-logo-nike"
               /></a>
@@ -668,7 +542,7 @@
               <h3 class="footer-heading">Shoes Magic</h3>
               <a href="../../index.html" class="footer-nav-link">Home</a>
               <a href="../news.html" class="footer-nav-link">Discovery</a>              
-              <a href="../product.html" class="footer-nav-link">Shoes Photo</a>
+              <a href="../product.html" class="footer-nav-link">Art Shoes</a>
               <a href="../introduce.html" class="footer-nav-link">About me</a>
             </div>
             <div class="footer-column">
@@ -682,17 +556,7 @@
                   ><i class="fab fa-youtube"></i
                 ></a>
               </div>
-              <!-- <h3 class="footer-heading">Đăng ký để nhận tin</h3>
-              <form action="" class="footer-form">
-                <input
-                  type="email"
-                  name=""
-                  placeholder="Nhập địa chỉ emal"
-                  id=""
-                  class="footer-form-input"
-                /> -->
-                <!-- <button type="submit" class="footer-form-button">Gửi</button> -->
-              <!-- </form> -->
+
             </div>
           </div>
         </div>
